@@ -1,0 +1,93 @@
+<template>
+<div>
+    <header>
+        <div id="logo">
+            <img src="/static/icon-bold-white.svg" alt="Logo">
+        </div>
+        <div id="right-content">
+            <p>Christian Townsend</p>
+            <nav>
+                <router-link class="nav-link" to="/">Work</router-link>
+                <router-link class="nav-link" to="/info">Info</router-link>
+            </nav>
+        </div>
+    </header>
+    <div id="spacer" v-if="spaced">
+        <hr>
+    </div>
+</div>
+</template>
+
+<script>
+export default {
+    props: {
+        spaced: {
+            type: Boolean,
+            default: true
+        }
+    }
+}
+</script>
+
+<style>
+header {
+    z-index: 100;
+    mix-blend-mode: difference;
+    color: white;
+
+    position: fixed;
+    width: 100%;
+    padding: 0 8%;
+    height: var(--header-height);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center start;
+}
+
+header #logo {
+    grid-column: 1 / span 1
+}
+
+header #right-content {
+    grid-column: 2 / span 3;
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    opacity: .6;
+    margin-left: 2rem;
+}
+
+#logo {
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    animation: rotate 12s linear infinite;
+}
+
+#spacer {
+    height: var(--header-height);
+    width: 100%;
+    padding: 0 8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+</style>
