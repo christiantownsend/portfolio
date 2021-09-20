@@ -15,9 +15,7 @@ pseudo-elements). One common use of this selector is to apply a custom
 }
 
 .container {
-    margin: inherit auto;
-    width: 90%;
-    max-width: 1200px;
+    padding: 0 8%;
 }
 
 a {
@@ -36,8 +34,16 @@ a:hover::after {
     transform: translateX(.25em);
 }
 
+.lightened {
+    opacity: .6;
+}
+
 .router-link-exact-active {
     opacity: 1;
+}
+
+.icon.outbound {
+    display: none;
 }
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -45,7 +51,8 @@ Root
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 :root {
-    --header-height: 10rem;
+    --header-height: 14rem;
+    --vertical-spacing: 1em;
 }
 html {
     font-family: 'Neue Montreal';
@@ -65,6 +72,7 @@ Content sectioning
 
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
+    margin-bottom: var(--vertical-spacing);
 }
 h1 {}
 h2 {}
@@ -101,7 +109,10 @@ Text block content
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 /* Overall styling, e.g. vertical spacing */
-p, ol, ul, pre, blockquote, figure, hr, dl {}
+p, ol, ul, pre, blockquote, figure, hr, dl {
+    margin: 0;
+    margin-bottom: var(--vertical-spacing);
+}
 
 p {}
 

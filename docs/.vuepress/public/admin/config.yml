@@ -2,14 +2,34 @@ backend:
   name: github
   repo: christiantownsend/portfolio
   branch: main # Branch to update (optional; defaults to master)
+
+local_backend: false
+
 media_folder: "docs/.vuepress/public/static"
-public_folder: "docs/.vuepress/dist/"
+public_folder: "/static/"
 collections:
-  # - name: "pages"
-  #   label: "Pages"
-  #   files:
-  #     - label: "About"
-  #       name: "about"
+  - name: "pages"
+    label: "Pages"
+    editor:
+      preview: false
+    files:
+      - label: "Info"
+        name: "info"
+        file: "docs/info/index.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "info"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Image", name: "image", widget: "image"}
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+          - label: "Interests"
+            name: "interests"
+            widget: "list"
+            field: {label: "Interest", name: "interest", widget: "string"}
   - name: "work" # Used in routes, e.g., /admin/collections/blog
     label: "Work" # Used in the UI
     label_singular: "Project"
@@ -19,11 +39,19 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Layout", name: "layout", widget: "hidden", default: "project"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      # - {label: "Collaborators"}
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
       - {label: "Visible", name: "visible", widget: "boolean"}
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Vimeo ID", name: "vimeo", widget: "string"}
-      # - label: "Tags"
-      #   name: "tags"
-      #   widget: "list"
+      - {label: "Thumbnail", name: "thumb", widget: "image", allow_multiple: false}
+      - label: "Categories"
+        name: "tags"
+        widget: "list"
+        default: ["Type"]
+      - label: "Collaborators"
+        name: "collaborators"
+        widget: "list"
+        fields:
+          - {label: "Name", name: "name", widget: "string"}
+          - {label: "Link", name: "link", widget: "string"}
