@@ -7,13 +7,13 @@
             <div id="bio"><Content /></div>
         </div>
         <div class="grid">
-            <div class="portrait">
+            <div class="span-2 m-span-4 portrait">
                 <img :src="this.$page.frontmatter.image" alt="Portrait" style="width: 90%;">
             </div>
-            <div>
+            <div class="span-2 m-span-4">
                 <div class="grid info-group">
-                    <p>How can I get in touch?</p>
-                    <div class="lightened">
+                    <p class="span-2">How can I get in touch?</p>
+                    <div class="span-2 lightened">
                         <p v-for="(link, index) in this.$page.frontmatter.links" :key="`link-${index}`">
                             <a :href="link.link">{{link.text}}</a>
                         </p>
@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="grid info-group">
-                    <p>What's he into?</p>
-                    <div class="lightened">
+                    <p class="span-2">What's he into?</p>
+                    <div class="span-2 lightened">
                         <p v-for="(interest, index) in this.$page.frontmatter.interests" :key="`interest-${index}`">
                             {{interest}}
                         </p>
@@ -50,15 +50,6 @@ export default {
 </script>
 
 <style>
-.grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid div, .grid p {
-    grid-column: span 1;
-}
-
 .info-group {
     margin-bottom: calc(var(--vertical-spacing) * 4)
 }

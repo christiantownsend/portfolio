@@ -1,11 +1,11 @@
 <template>
 <div>
-    <header>
-        <div id="logo">
+    <header class="grid">
+        <div id="logo" class="span-1 m-span-4">
             <img src="/static/icon-bold-white.svg" alt="Logo">
         </div>
-        <div id="right-content">
-            <p>Christian Townsend</p>
+        <div id="right-content" class="span-3 m-span-4">
+            <div>Christian Townsend</div>
             <nav>
                 <router-link class="nav-link" to="/">Work</router-link>
                 <router-link class="nav-link" to="/info">Info</router-link>
@@ -40,18 +40,10 @@ header {
     padding: 0 8%;
     height: var(--header-height);
 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     place-items: center start;
 }
 
-header #logo {
-    grid-column: 1 / span 1
-}
-
 header #right-content {
-    grid-column: 2 / span 3;
-
     width: 100%;
     display: flex;
     flex-direction: row;

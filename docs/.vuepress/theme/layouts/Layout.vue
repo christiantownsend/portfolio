@@ -2,8 +2,18 @@
   <div>
     <Header />
     <!-- <VimeoEmbed videoID="573454129" /> -->
-    <div class="project-row" v-for="project in pages" :key="project.path">
-        {{project.path}}
+    <div class="container">
+      <router-link class="project-row grid no-arrow" v-for="project in pages" :key="project.key" :to="project.path">
+          <div class="span-2 m-span-4">
+            <div class="grid">
+              <p class="span-2 lightened">{{project.frontmatter.tags.join(", ")}}</p>
+              <p><a class="span-2">{{project.frontmatter.title}}</a></p>
+            </div>
+          </div>
+          <div class="span-2 m-span-4">
+            <VimeoEmbed :videoID="project.frontmatter.vimeo" />
+          </div>
+      </router-link>
     </div>
     <Content />
   </div>
@@ -27,8 +37,10 @@ export default {
     document.head.appendChild(vimeoScript);
 
     this.$site.pages.forEach(page => {
-        console.log(page)
-        this.pages.push(page)
+        console.log(page.frontmatter)
+        if (page.frontmatter.layout == 'project' && page.frontmatter.visible) {
+          this.pages.push(page)
+        }
     })
   }
 }
