@@ -1,17 +1,16 @@
 ---
 layout: project
-title: Input
+title: Input Magazine
+year: "2019"
 description: blah blah
 visible: true
 vimeo: "573454129"
+thumb: /static/input-placeholder.jpg
 tags:
-  - Typography
-  - Branding
-  - 3D Graphics / Motion
+  - Type
   - Editorial
-  - Type Design
-  - Generative Art
-  - Exhibition
-  - Packaging
+collaborators:
+  - name: r/mechanicalkeyboards
+    link: https://www.reddit.com/r/MechanicalKeyboards/
 ---
 This is the body
