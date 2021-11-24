@@ -12,16 +12,19 @@
     <div class="container">
         <Content />
     </div>
+    <hr>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '../components/Header.vue'
+import Footer from '../components/Footer.vue'
 import VimeoEmbed from '../components/VimeoEmbed.vue'
 import styles from '../styles/index.css'
 
 export default {
-    components: { Header, VimeoEmbed },
+    components: { Header, VimeoEmbed, Footer },
     mounted() {
         let vimeoScript = document.createElement("script")
         vimeoScript.setAttribute("src", "https://player.vimeo.com/api/player.js")
