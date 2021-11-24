@@ -41,6 +41,8 @@ header {
     height: var(--header-height);
 
     place-items: center start;
+
+    pointer-events: none;
 }
 
 header #right-content {
@@ -54,6 +56,8 @@ header #right-content {
 .nav-link {
     opacity: .6;
     margin-left: 2rem;
+
+    pointer-events: initial;
 }
 
 #logo {
