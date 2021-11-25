@@ -9,14 +9,14 @@ module.exports = {
         links: { externalIcon: false }
     },
     plugins: [
-        [
-            'vuepress-plugin-clean-urls',
-            {
-                normalSuffix: '',
-                indexSuffix: '/',
-                notFoundPath: '/404.html',
-            },
-        ],
+        // [
+        //     'vuepress-plugin-clean-urls',
+        //     {
+        //         normalSuffix: '',
+        //         indexSuffix: '/',
+        //         notFoundPath: '/404.html',
+        //     },
+        // ],
         ['vuepress-plugin-nprogress'],
         [
             'vuepress-plugin-container',
