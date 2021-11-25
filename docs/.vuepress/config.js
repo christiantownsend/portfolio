@@ -22,7 +22,7 @@ module.exports = {
             'vuepress-plugin-container',
             {
                 type: 'span',
-                before: info => `<div class="span-${info}">`,
+                before: info => `<div class="span-${info} m-span-4">`,
                 after: '</div>',
             },
         ],
