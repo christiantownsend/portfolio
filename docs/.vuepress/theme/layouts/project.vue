@@ -5,7 +5,7 @@
             <router-link class="nav-link no-arrow" to="/">← Back</router-link>
         </div>
         <div id="logo" class="span-2" style="place-self: center end;">
-            <img src="/static/icon-bold-white.svg" alt="Logo">
+            <Logo />
         </div>
     </header>
     <VimeoEmbed :videoID="$page.frontmatter.vimeo" />
@@ -38,10 +38,11 @@
 import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
 import VimeoEmbed from '@theme/components/VimeoEmbed.vue'
+import Logo from '@theme/components/Logo.vue'
 import styles from '@theme/styles/index.css'
 
 export default {
-    components: { Header, VimeoEmbed, Footer },
+    components: { Header, VimeoEmbed, Footer, Logo },
     mounted() {
         let vimeoScript = document.createElement("script")
         vimeoScript.setAttribute("src", "https://player.vimeo.com/api/player.js")
