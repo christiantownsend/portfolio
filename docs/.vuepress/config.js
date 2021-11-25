@@ -17,6 +17,7 @@ module.exports = {
                 notFoundPath: '/404.html',
             },
         ],
+        ['vuepress-plugin-nprogress'],
         [
             'vuepress-plugin-container',
             {

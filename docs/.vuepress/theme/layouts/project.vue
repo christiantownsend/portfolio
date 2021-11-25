@@ -17,7 +17,7 @@
                     <p>Categories</p>
                     <p class="lightened">{{ $page.frontmatter.tags.join(', ') }}</p>
 
-                    <p>Collaborators</p>
+                    <p v-if="$page.frontmatter.collaborators">Collaborators</p>
                     <a class="lightened" v-for="collaborator in $page.frontmatter.collaborators" :key="collaborator.name" :href="collaborator.link">{{ collaborator.name }}</a>
                 </div>
             </div>
