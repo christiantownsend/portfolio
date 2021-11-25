@@ -3,6 +3,6 @@
     publish = "docs/.vuepress/dist/"
 
 [[headers]]
-  for = "/*"
+  for = "/work/*"
   [headers.values]
     Content-Type = "text/html"
