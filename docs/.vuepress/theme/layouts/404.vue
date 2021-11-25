@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import styles from '../styles/index.css';
+import styles from '@theme/styles/index.css';
 
 export default {}
 </script>

@@ -37,10 +37,10 @@
 </template>
 
 <script>
-import Header from '../components/Header.vue'
-import Footer from '../components/Footer.vue'
-import VimeoEmbed from '../components/VimeoEmbed.vue'
-import styles from '../styles/index.css'
+import Header from '@theme/components/Header.vue'
+import Footer from '@theme/components/Footer.vue'
+import VimeoEmbed from '@theme/components/VimeoEmbed.vue'
+import styles from '@theme/styles/index.css'
 
 export default {
     components: { Header, VimeoEmbed, Footer },

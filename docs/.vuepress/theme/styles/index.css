@@ -19,7 +19,8 @@ pseudo-elements). One common use of this selector is to apply a custom
 }
 
 .content-container {
-    padding: calc(var(--vertical-spacing) * 2) 0;
+    padding-top: calc(var(--vertical-spacing) * 2);
+    padding-bottom: var(--vertical-spacing);
 }
 
 .grid {
@@ -27,9 +28,17 @@ pseudo-elements). One common use of this selector is to apply a custom
     grid-template-columns: repeat(4, 1fr);
 }
 
+.content-container.grid p {
+    grid-column: span 4;
+}
+
+.content-container.grid img {
+    width: 100%;
+}
+
 .gutter {
     column-gap: 1rem;
-    row-gap: 1rem;
+    /* row-gap: 1rem; */
 }
   
 .span-1 {

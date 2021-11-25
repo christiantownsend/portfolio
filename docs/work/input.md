@@ -18,3 +18,11 @@ collaborators:
     link: https://www.reddit.com/r/MechanicalKeyboards/
 ---
 ![Input Cover](/static/input-placeholder.jpg)
+
+::: span 2
+![Input Cover](/static/input-placeholder.jpg)
+:::
+
+::: span 2
+<vimeo videoID="573454129" />
+:::
