@@ -17,12 +17,21 @@ collaborators:
   - name: r/mechanicalkeyboards
     link: https://www.reddit.com/r/MechanicalKeyboards/
 ---
-![Input Cover](/static/input-placeholder.jpg)
-
-::: span 2
-![Input Cover](/static/input-placeholder.jpg)
-:::
-
-::: span 2
-<vimeo videoID="573454129" />
-:::
+![Input Cover](/static/Input-00-Cover.jpg)
+![Input Cover](/static/Input-00-Index.jpg)
+![Input Cover](/static/Input-01.jpg)
+![Input Cover](/static/Input-02-03.jpg)
+![Input Cover](/static/Input-04-05.jpg)
+![Input Cover](/static/Input-06-07.jpg)
+![Input Cover](/static/Input-08-09.jpg)
+![Input Cover](/static/Input-10-11.jpg)
+![Input Cover](/static/Input-12-13.jpg)
+![Input Cover](/static/Input-14-15.jpg)
+![Input Cover](/static/Input-16-17.jpg)
+![Input Cover](/static/Input-18-19.jpg)
+![Input Cover](/static/Input-20-21.jpg)
+![Input Cover](/static/Input-22-23.jpg)
+![Input Cover](/static/Input-24-25.jpg)
+![Input Cover](/static/Input-26-27.jpg)
+![Input Cover](/static/Input-28-29.jpg)
+![Input Cover](/static/Input-30-31.jpg)

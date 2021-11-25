@@ -103,6 +103,9 @@ Root
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 :root {
+    --main-color: #f1f1f1;
+    --bg-color: #06060f;
+
     --header-height: 14rem;
     --vertical-spacing: 1em;
 }
@@ -113,8 +116,8 @@ html {
 }
 body {
     margin: 0;
-    background-color: black;
-    color: white;
+    background-color: var(--bg-color);
+    color: var(--main-color);
 }
 
 
