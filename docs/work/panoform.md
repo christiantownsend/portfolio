@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Panoform
-year: "2019"
+year: "2018"
 description: Panoform is an online tool meant to allow people of all ages to
   produce “VR” content using only paper, drawing utensils, and a mobile device.
   Over the summer of 2019, working under a professor of mine, I entirely

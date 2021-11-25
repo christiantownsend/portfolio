@@ -54,6 +54,8 @@ export default {
           this.projects.push(page)
         }
     })
+
+    this.projects.sort((a, b) => (a.frontmatter.year < b.frontmatter.year) ? 1 : -1);
   },
 }
 </script>
