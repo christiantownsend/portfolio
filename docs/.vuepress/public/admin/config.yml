@@ -44,7 +44,7 @@ collections:
       - {label: "Year", name: "year", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Visible", name: "visible", widget: "boolean"}
-      - {label: "Body", name: "body", widget: "markdown", buttons: [], modes: ["raw"]}
+      - {label: "Body", name: "body", widget: "markdown", buttons: [], modes: ["raw", "rich_text"]}
       - {label: "Vimeo ID", name: "vimeo", widget: "string"}
       - {label: "Thumbnail", name: "thumb", widget: "image", allow_multiple: false}
       - label: "Categories"
