@@ -44,7 +44,6 @@ collections:
       - {label: "Year", name: "year", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Visible", name: "visible", widget: "boolean"}
-      - {label: "Body", name: "body", widget: "markdown", modes: ["raw"]}
       - {label: "Vimeo ID", name: "vimeo", widget: "string"}
       - {label: "Thumbnail", name: "thumb", widget: "image", allow_multiple: false}
       - label: "Categories"
@@ -57,3 +56,4 @@ collections:
         fields:
           - {label: "Name", name: "name", widget: "string"}
           - {label: "Link", name: "link", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown", buttons: [], editor_components: [], modes: ["raw"]}
