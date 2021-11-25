@@ -13,8 +13,6 @@ tags:
   - Packaging
   - Branding
   - Product
-collaborators:
-  - name: r/mechanicalkeyboards
-    link: https://www.reddit.com/r/MechanicalKeyboards/
+collaborators: []
 ---
 This is the body
