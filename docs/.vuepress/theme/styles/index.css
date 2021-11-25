@@ -18,6 +18,10 @@ pseudo-elements). One common use of this selector is to apply a custom
     padding: 0 8%;
 }
 
+.content-container {
+    padding: calc(var(--vertical-spacing) * 2) 0;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);

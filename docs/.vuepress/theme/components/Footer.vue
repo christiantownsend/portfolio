@@ -8,14 +8,6 @@
 </template>
 
 <script>
-// export default {
-//     props: {
-//         spaced: {
-//             type: Boolean,
-//             default: true
-//         }
-//     }
-// }
 </script>
 
 <style>

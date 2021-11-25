@@ -8,11 +8,28 @@
             <img src="/static/icon-bold-white.svg" alt="Logo">
         </div>
     </header>
-    <VimeoEmbed videoID="573454129" />
+    <VimeoEmbed :videoID="$page.frontmatter.vimeo" />
     <div class="container">
-        <Content />
+        <div class="grid" style="padding-top: calc(var(--vertical-spacing)*2)">
+            <div class="span-2 m-span-4 grid" style="margin-bottom: calc(var(--vertical-spacing)*2)">
+                <div class="span-2">{{ $page.frontmatter.title + ' (' + $page.frontmatter.year + ')' }}</div>
+                <div class="span-2">
+                    <p>Categories</p>
+                    <p class="lightened">{{ $page.frontmatter.tags.join(', ') }}</p>
+
+                    <p>Collaborators</p>
+                    <a class="lightened" v-for="collaborator in $page.frontmatter.collaborators" :key="collaborator.name" :href="collaborator.link">{{ collaborator.name }}</a>
+                </div>
+            </div>
+            <div class="span-2 m-span-4 lightened" style="margin-bottom: calc(var(--vertical-spacing)*2)">
+                {{ $page.frontmatter.description }}
+            </div>
+        </div>
+        <hr>
+
+        <Content class="content-container"/>
+        <hr>
     </div>
-    <hr>
     <Footer />
   </div>
 </template>
