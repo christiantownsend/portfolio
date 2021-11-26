@@ -2,7 +2,7 @@
   <div>
     <Header />
     <div class="container">
-        <div style="padding: calc(var(--vertical-spacing) * 6) 0;">
+        <div style="padding: calc(var(--vertical-spacing) * 4) 0;">
             <p>Who is this guy?</p>
             <div id="bio"><Content /></div>
         </div>

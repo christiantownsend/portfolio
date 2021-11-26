@@ -26,6 +26,7 @@ pseudo-elements). One common use of this selector is to apply a custom
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    white-space: normal;
 }
 
 .content-container.grid p {
@@ -170,6 +171,10 @@ p, ol, ul, pre, blockquote, figure, hr, dl {
 }
 
 p {}
+
+p:last-child {
+    margin-bottom: 0;
+}
 
 ol, ul {}
 ol {}

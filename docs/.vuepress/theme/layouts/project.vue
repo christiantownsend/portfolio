@@ -1,8 +1,8 @@
 <template>
   <div>
-    <header class="grid">
+    <header class="grid project-header">
         <div class="span-2">
-            <router-link class="nav-link no-arrow" to="/">← Back</router-link>
+            <router-link class="nav-link no-arrow" style="margin-left: 0;" to="/">← Back</router-link>
         </div>
         <div id="logo" class="span-2" style="place-self: center end;">
             <Logo />

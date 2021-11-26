@@ -9,7 +9,7 @@
           <div class="span-2 m-span-4">
             <div class="grid">
               <p class="span-2 lightened">{{project.frontmatter.tags.join(", ")}}</p>
-              <p><a class="span-2">{{project.frontmatter.title}}</a></p>
+              <p class="span-2"><a>{{project.frontmatter.title}}</a></p>
             </div>
           </div>
           <div class="span-2 m-span-4" style="pointer-events: none; position: relative;">
@@ -79,5 +79,11 @@ export default {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .project-preview {
+      visibility: visible;
+    }
 }
 </style>

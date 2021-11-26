@@ -93,4 +93,21 @@ header #right-content {
         transform: rotate(360deg);
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    header:not(.project-header) {
+        position: relative;
+        height: auto;
+        padding-top: calc(var(--vertical-spacing)*3);
+        padding-bottom: calc(var(--vertical-spacing)*3);
+    }
+
+    #logo {
+        margin-bottom: calc(var(--vertical-spacing)*3);
+    }
+
+    #spacer {
+        height: auto;
+    }
+}
 </style>
