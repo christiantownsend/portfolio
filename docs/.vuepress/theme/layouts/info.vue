@@ -58,7 +58,7 @@ export default {
 }
 
 #bio a {
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 #bio p{
     font-size: 2.5rem;

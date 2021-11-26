@@ -12,4 +12,29 @@ thumb: /static/pudge-placeholder.jpg
 tags:
   - Typeface
 ---
-Body
+
+![Pudge Mono Header](/static/Pudge-Header.png)
+
+::: span 2
+![Pudge Mono Large Glyph](/static/Pudge-Large-Letter.png)
+:::
+
+::: span 2
+![Pudge Mono Glyphs](/static/Pudge-Glyphs.png)
+:::
+
+::: span 2
+![For Your Enjoyment Poster](/static/Pudge_Poster__0003_For-Your-Enjoyment.png)
+:::
+
+::: span 2
+![I Love Lucy Poster](/static/Pudge_Poster__0002_I-Love-Lucy.png)
+:::
+
+::: span 2
+![Wash Ur Hands Poster](/static/Pudge_Poster__0000_Wash-Ur-Hands.png)
+:::
+
+::: span 2
+![Roses Poster](/static/Pudge_Poster__0001_Roses.png)
+:::
