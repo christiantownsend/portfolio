@@ -1,10 +1,10 @@
 <template>
 <div>
     <header class="grid">
-        <div id="logo" class="span-1 m-span-4">
+        <div id="logo" class="span-1 t-span-4">
             <Logo />
         </div>
-        <div id="right-content" class="span-3 m-span-4">
+        <div id="right-content" class="span-3 t-span-4">
             <div>Christian Townsend</div>
             <nav>
                 <router-link class="nav-link" to="/">Work</router-link>
