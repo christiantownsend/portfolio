@@ -13,6 +13,15 @@ tags:
   - Packaging
   - Branding
   - Product
-collaborators: []
 ---
-body
+![Package Line-Up](/static/Tea-Package-Hero-Image-Spaced.png)
+
+::: span 2
+![Flat Plan](/static/Tea-Flat-Plan.png)
+:::
+
+::: span 2
+<vimeo videoID="577812325" square/>
+:::
+
+![Package Open](/static/Tea-Package-Open.png)

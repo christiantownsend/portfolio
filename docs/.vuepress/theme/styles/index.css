@@ -68,6 +68,10 @@ pseudo-elements). One common use of this selector is to apply a custom
     grid-column: span 4;
 }
 
+/* img[class*="span"], video[class*="span"] {
+    width: 100%;
+} */
+
 @media only screen and (max-width: 1000px) {
     .t-span-1 {
         grid-column: span 1;
@@ -318,7 +322,7 @@ ins {}
 Embedded content
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
-img {}
+img {display: block;}
 svg {}
 video {}
 canvas {}

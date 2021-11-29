@@ -102,7 +102,7 @@ header #right-content {
         padding-bottom: calc(var(--vertical-spacing)*3);
     }
 
-    #logo {
+    #logo:not(.project-logo) {
         margin-bottom: calc(var(--vertical-spacing)*3);
     }
 

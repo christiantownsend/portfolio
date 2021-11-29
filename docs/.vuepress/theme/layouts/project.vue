@@ -4,7 +4,7 @@
         <div class="span-2">
             <router-link class="nav-link no-arrow" style="margin-left: 0;" to="/">← Back</router-link>
         </div>
-        <div id="logo" class="span-2" style="place-self: center end;">
+        <div id="logo" class="span-2 project-logo" style="place-self: center end;">
             <Logo />
         </div>
     </header>
@@ -12,8 +12,8 @@
     <div class="container">
         <div class="grid" style="padding-top: calc(var(--vertical-spacing)*2)">
             <div class="span-2 m-span-4 grid" style="margin-bottom: calc(var(--vertical-spacing)*2)">
-                <div class="span-2">{{ $page.frontmatter.title + ' (' + $page.frontmatter.year + ')' }}</div>
-                <div class="span-2">
+                <p class="span-2 m-span-4">{{ $page.frontmatter.title + ' (' + $page.frontmatter.year + ')' }}</p>
+                <div class="span-2 m-span-4">
                     <p>Categories</p>
                     <p class="lightened">{{ $page.frontmatter.tags.join(', ') }}</p>
 
