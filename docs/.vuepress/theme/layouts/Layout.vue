@@ -29,7 +29,7 @@
 <script>
 import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
-import styles from '@theme/styles/index.styl'
+import '@theme/styles/index.styl'
 
 export default {
   components: { Header, Footer },
@@ -51,7 +51,7 @@ export default {
         }
     })
 
-    this.projects.sort((a, b) => (a.frontmatter.year < b.frontmatter.year) ? 1 : -1);
+    this.projects.sort((a, b) => (a.frontmatter.order > b.frontmatter.order) ? 1 : -1);
   },
 }
 </script>

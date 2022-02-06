@@ -3,7 +3,12 @@
     src: url('/static/fonts/NeueMontreal-Regular.woff2');
 }
 
-::selection, ::moz-selection {
+::selection {
+    background: var(--color-primary);
+    color: var(--color-neutral-900);
+}
+
+::moz-selection {
     background: var(--color-primary);
     color: var(--color-neutral-900);
 }

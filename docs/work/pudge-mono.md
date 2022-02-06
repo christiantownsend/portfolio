@@ -2,6 +2,7 @@
 layout: project
 title: Pudge Mono
 year: "2020"
+order: 4
 description: Pudge Mono is a high-contrast, reversed-stress, monospace display
   typeface designed for use at extremely large sizes. Its features really shine
   within a strict grid structure, where its modular and monospaced properties

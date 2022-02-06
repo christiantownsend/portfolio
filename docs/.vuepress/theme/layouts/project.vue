@@ -42,7 +42,7 @@
 import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
 import Logo from '@theme/components/Logo.vue'
-import styles from '@theme/styles/index.styl'
+import '@theme/styles/index.styl'
 
 export default {
     components: { Header, Footer, Logo },

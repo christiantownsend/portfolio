@@ -2,6 +2,7 @@
 layout: project
 title: Concept Tea Package
 year: "2020"
+order: 3
 description: This tea package is a project I made while studying abroad in
   Prague, Czech Republic. It was created with the intention of making a
   practical package for manufacturing, where all printing happens on a single

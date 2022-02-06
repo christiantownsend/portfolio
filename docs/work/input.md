@@ -2,6 +2,7 @@
 layout: project
 title: Input Magazine
 year: "2019"
+order: 5
 description: Input is a quarterly publication focusing on the surprisingly deep
   community surrounding mechanical keyboards. Each edition features interviews
   with prominent members of the community, and articles showcasing recent
