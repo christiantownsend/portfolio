@@ -10,7 +10,8 @@
               <p class="span-6 pad-inline-end-1 m-first"><a>{{project.frontmatter.title}}</a></p>
           </div>
           <div class="span-6" style="pointer-events: none; position: relative;">
-            <img class="project-thumbnail project-placeholder" src="/static/placeholder.png" alt="" srcset="">
+            <!-- <img class="project-thumbnail project-placeholder" src="/static/placeholder.svg" alt="" srcset=""> -->
+            <Placeholder class="project-thumbnail project-placeholder"/>
             <div class="project-preview">
               <img class="project-thumbnail" :src="project.frontmatter.thumb" alt="" srcset="">
               <vimeo :videoID="project.frontmatter.vimeo" />
@@ -29,10 +30,11 @@
 <script>
 import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
+import Placeholder from '@theme/components/Placeholder.vue'
 import '@theme/styles/index.styl'
 
 export default {
-  components: { Header, Footer },
+  components: { Header, Footer, Placeholder },
   data() {
     return {
         projects: [],
