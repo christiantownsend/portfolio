@@ -5,8 +5,6 @@
 </template>
 
 <script>
-// import VimeoEmbed from '@theme/components/VimeoEmbed.vue';
-
 export default {
     data() {
         return {
@@ -19,7 +17,3 @@ export default {
     }
 }
 </script>
-
-<style>
-
-</style>

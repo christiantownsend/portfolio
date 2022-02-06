@@ -19,6 +19,14 @@ for num in (1..12) {
         gap: 1rem * num;
     }
 
+    .gap-vertical-{num} {
+        row-gap: 1rem * num;
+    }
+
+    .gap-horizontal-{num} {
+        column-gap: 1rem * num;
+    }
+
     .pad-{num} {
         --num: num;
         padding: calc(var(--spacing-unit) * var(--num));

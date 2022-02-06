@@ -64,10 +64,18 @@ a {
     // white-space: pre;
 }
 
+a:not(.no-arrow) {
+    --arrow-spacing: .25em;
+
+    padding-right: calc(1ch + var(--arrow-spacing));
+}
+
 a:not(.no-arrow)::after {
     display: inline-block;
     content: '↗';
-    padding-left: .25em;
+    padding-left: var(--arrow-spacing);
+    width: 1ch;
+    margin-right: -1ch;
     transition: transform .5s var(--default-timing);
 }
 
