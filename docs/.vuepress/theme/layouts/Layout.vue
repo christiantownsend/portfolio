@@ -10,7 +10,7 @@
               <p class="span-6 pad-inline-end-1 m-first"><a>{{project.frontmatter.title}}</a></p>
           </div>
           <div class="span-6" style="pointer-events: none; position: relative;">
-            <img class="project-thumbnail" src="/static/placeholder.png" alt="" srcset="">
+            <img class="project-thumbnail project-placeholder" src="/static/placeholder.png" alt="" srcset="">
             <div class="project-preview">
               <img class="project-thumbnail" :src="project.frontmatter.thumb" alt="" srcset="">
               <vimeo :videoID="project.frontmatter.vimeo" />

@@ -5,7 +5,7 @@
         <hr>
         <div class="pad-block-4">
             <p class="margin-block-end-1">Who is this guy?</p>
-            <div id="bio" style="width: 100%; max-width: 135ch"><Content /></div>
+            <div id="bio" style="width: 100%; max-width: 130ch"><Content /></div>
         </div>
         <div class="grid">
             <div class="span-6 margin-block-end-4">
@@ -61,12 +61,12 @@ export default {
     white-space: nowrap;
 }
 #bio p{
-    font-size: 2.5rem;
+    font-size: 2.25em;
 }
 
 @media only screen and (max-width: 1000px) {
     #bio p {
-        font-size: 1.75rem;
+        font-size: 1.5em;
     }
 }
 </style>

@@ -20,7 +20,7 @@
                     <p>Categories</p>
                     <p class="lighten">{{ $page.frontmatter.tags.join(', ') }}</p>
 
-                    <p v-if="$page.frontmatter.collaborators">Collaborators</p>
+                    <p v-if="$page.frontmatter.collaborators" class="margin-block-start-1">Collaborators</p>
                     <a class="lighten" v-for="collaborator in $page.frontmatter.collaborators" :key="collaborator.name" :href="collaborator.link">{{ collaborator.name }}</a>
                 </div>
             </div>
@@ -30,7 +30,7 @@
         </div>
         <hr>
 
-        <Content class="pad-block-1 grid gap-1"/>
+        <Content class="grid gap-1 pad-block-1"/>
         
         <hr>
     </div>
