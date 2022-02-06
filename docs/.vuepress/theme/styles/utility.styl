@@ -1,0 +1,101 @@
+.fixed {
+    position: fixed
+}
+
+.lighten {
+    opacity: var(--lightened-opacity);
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+for num in (1..12) {
+    .span-{num} {
+        grid-column-start: span num;
+    }
+
+    .gap-{num} {
+        gap: 1rem * num;
+    }
+
+    .pad-{num} {
+        --num: num;
+        padding: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .pad-block-{num} {
+        --num: num;
+        padding-block: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .pad-block-start-{num} {
+        --num: num;
+        padding-block-start: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .pad-block-end-{num} {
+        --num: num;
+        padding-block-end: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .pad-inline-{num} {
+        --num: num;
+        padding-inline: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .pad-inline-start-{num} {
+        --num: num;
+        padding-inline-start: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .pad-inline-end-{num} {
+        --num: num;
+        padding-inline-end: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .margin-{num} {
+        --num: num;
+        margin: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .margin-block-{num} {
+        --num: num;
+        margin-block: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .margin-block-start-{num} {
+        --num: num;
+        margin-block-start: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .margin-block-end-{num} {
+        --num: num;
+        margin-block-end: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .margin-inline-{num} {
+        --num: num;
+        margin-inline: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .margin-inline-start-{num} {
+        --num: num;
+        margin-inline-start: calc(var(--spacing-unit) * var(--num));
+    }
+
+    .margin-inline-end-{num} {
+        --num: num;
+        margin-inline-end: calc(var(--spacing-unit) * var(--num));
+    }
+}
+
+@media screen and (max-width: 800px) {
+    *:not(.static) > [class*=span] {
+        grid-column-start: span 12;
+    }
+
+    .m-first {
+        order: -1;
+    }
+}

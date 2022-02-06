@@ -1,0 +1,26 @@
+.project {
+  display: block;
+}
+
+.project-preview {
+  visibility: visible;
+}
+
+.project-thumbnail {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+@media (hover: hover), (-ms-high-contrast:none) {
+    .project-preview {
+      visibility: hidden;
+    }
+
+    .project-row.active .project-preview{
+        visibility: visible;
+        outline: 1px solid var(--color-primary);
+    }
+}

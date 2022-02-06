@@ -20,6 +20,6 @@ interests:
   - Exhibition
   - Packaging
 ---
-Christian is a designer currently working with [The Collected Works](https://thecollectedworks.com/)
+Christian is an NYC-based designer currently working with [The Collected Works](https://thecollectedworks.com/)
 
-He's a collector of hobbies— outside of work you may find him building keyboards, doodling in his sketchbook, coding some shit, cooking, or most recently shredding it in guitar hero. When designing, he particularly enjoys building tools to make his life easier and spending time getting the <span style="white-space: nowrap;">details right.</span>
+He's a collector of hobbies— outside of work you may find him building keyboards, doodling in his sketchbook, coding some shit, cooking, or most recently shredding it in guitar hero. When designing, he particularly enjoys building tools to make his life easier and spending time getting the <span class="nowrap">details right.</span>

@@ -16,12 +16,12 @@ tags:
 ---
 ![Package Line-Up](/static/Tea-Package-Hero-Image-Spaced.png)
 
-::: span 2
+::: span 6
 ![Flat Plan](/static/Tea-Flat-Plan.png)
 :::
 
-::: span 2
-<vimeo videoID="577812325" square/>
+::: span 6
+<vimeo videoID="577812325" aspectRatio="1 / 1"/>
 :::
 
 ![Package Open](/static/Tea-Package-Open.png)

@@ -1,33 +1,37 @@
 <template>
   <div>
-    <header class="grid project-header">
+    <header class="project-header container pad-block-3" style="position: fixed; z-index: 10; inset: 0 0 auto 0; display: flex; justify-content: space-between; align-items: center; mix-blend-mode: difference;">
         <div class="span-2">
             <router-link class="nav-link no-arrow" style="margin-left: 0;" to="/">← Back</router-link>
         </div>
-        <div id="logo" class="span-2 project-logo" style="place-self: center end;">
+        <div id="logo" style="fill: white">
             <Logo />
         </div>
     </header>
-    <VimeoEmbed :videoID="$page.frontmatter.vimeo" />
+
+    <vimeo :videoID="$page.frontmatter.vimeo"/>
+
+    
     <div class="container">
-        <div class="grid" style="padding-top: calc(var(--vertical-spacing)*2)">
-            <div class="span-2 m-span-4 grid" style="margin-bottom: calc(var(--vertical-spacing)*2)">
-                <p class="span-2 m-span-4">{{ $page.frontmatter.title + ' (' + $page.frontmatter.year + ')' }}</p>
-                <div class="span-2 m-span-4">
+        <div class="grid pad-block-4">
+            <div class="span-6 grid gap-1 static margin-block-end-2">
+                <p class="span-6">{{ $page.frontmatter.title + ' (' + $page.frontmatter.year + ')' }}</p>
+                <div class="span-6">
                     <p>Categories</p>
-                    <p class="lightened">{{ $page.frontmatter.tags.join(', ') }}</p>
+                    <p class="lighten">{{ $page.frontmatter.tags.join(', ') }}</p>
 
                     <p v-if="$page.frontmatter.collaborators">Collaborators</p>
-                    <a class="lightened" v-for="collaborator in $page.frontmatter.collaborators" :key="collaborator.name" :href="collaborator.link">{{ collaborator.name }}</a>
+                    <a class="lighten" v-for="collaborator in $page.frontmatter.collaborators" :key="collaborator.name" :href="collaborator.link">{{ collaborator.name }}</a>
                 </div>
             </div>
-            <div class="span-2 m-span-4 lightened" style="margin-bottom: calc(var(--vertical-spacing)*2)">
+            <div class="span-6 lighten">
                 {{ $page.frontmatter.description }}
             </div>
         </div>
         <hr>
 
-        <Content class="content-container grid gutter"/>
+        <Content class="pad-block-1 grid gap-1"/>
+        
         <hr>
     </div>
     <Footer />
@@ -37,12 +41,11 @@
 <script>
 import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
-import VimeoEmbed from '@theme/components/VimeoEmbed.vue'
 import Logo from '@theme/components/Logo.vue'
-import styles from '@theme/styles/index.css'
+import styles from '@theme/styles/index.styl'
 
 export default {
-    components: { Header, VimeoEmbed, Footer, Logo },
+    components: { Header, Footer, Logo },
     mounted() {
         let vimeoScript = document.createElement("script")
         vimeoScript.setAttribute("src", "https://player.vimeo.com/api/player.js")

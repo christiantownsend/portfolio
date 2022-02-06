@@ -1,22 +1,19 @@
 <template>
   <div>
     <Header />
-    <!-- <VimeoEmbed videoID="573454129" /> -->
     <div class="container">
-
+      <hr>
       <router-link class="project no-arrow" v-for="(project, index) in projects" :key="project.key" :to="project.path" @mouseenter.native="activeProject = index">
-        <div class="grid project-row" :class="{active: index == activeProject}">
-          <div class="span-2 t-span-4">
-            <div class="grid">
-              <p class="span-2 m-span-4 pad-right-2 lightened">{{project.frontmatter.tags.join(", ")}}</p>
-              <p class="span-2 m-span-4 pad-right-2 m-first"><a>{{project.frontmatter.title}}</a></p>
-            </div>
+        <div class="grid project-row pad-block-2" :class="{active: index == activeProject}">
+          <div class="span-6 grid static pad-block-end-2">
+              <p class="span-6 pad-inline-end-1 lighten">{{project.frontmatter.tags.join(", ")}}</p>
+              <p class="span-6 pad-inline-end-1 m-first"><a>{{project.frontmatter.title}}</a></p>
           </div>
-          <div class="span-2 t-span-4" style="pointer-events: none; position: relative;">
+          <div class="span-6" style="pointer-events: none; position: relative;">
             <img class="project-thumbnail" src="/static/placeholder.png" alt="" srcset="">
             <div class="project-preview">
               <img class="project-thumbnail" :src="project.frontmatter.thumb" alt="" srcset="">
-              <VimeoEmbed :videoID="project.frontmatter.vimeo" />
+              <vimeo :videoID="project.frontmatter.vimeo" />
             </div>
           </div>
         </div>
@@ -32,11 +29,10 @@
 <script>
 import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
-import VimeoEmbed from '@theme/components/VimeoEmbed.vue'
-import styles from '@theme/styles/index.css'
+import styles from '@theme/styles/index.styl'
 
 export default {
-  components: { Header, VimeoEmbed, Footer },
+  components: { Header, Footer },
   data() {
     return {
         projects: [],
@@ -61,34 +57,4 @@ export default {
 </script>
 
 <style>
-.project {
-  display: block;
-  padding-right: 0;
-}
-
-.project-row {
-  padding: calc(var(--vertical-spacing)*2) 0
-}
-
-.project-preview {
-  visibility: hidden;
-}
-
-.project-row.active .project-preview{
-  visibility: visible;
-}
-
-.project-thumbnail {
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-@media only screen and (max-width: 1000px) {
-    .project-preview {
-      visibility: visible;
-    }
-}
 </style>

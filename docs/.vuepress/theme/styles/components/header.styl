@@ -1,0 +1,104 @@
+.header-outer {
+    --header-outer-height: 16rem;
+    --header-inner-height: 6rem;
+    --header-height-difference: calc(var(--header-outer-height) - var(--header-inner-height));
+
+    position: sticky;
+    top: calc(var(--header-height-difference) * -1);
+    z-index: 10;
+
+    height: var(--header-outer-height);
+    
+    display: flex;
+    align-items: center;
+
+    background: var(--color-neutral-900-t);
+
+    .header-inner {
+        position: sticky;
+        top: 0;
+
+        height: var(--header-inner-height);
+        width: 100%;
+
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "logo title nav nav";
+        align-items: center;
+
+        color: var(--color-neutral-100);
+
+        > * {
+            white-space: nowrap;
+            color: inherit;
+        }
+
+        .title {
+            grid-area: title;
+        }
+
+        nav {
+            justify-self: right;
+            grid-area: nav;
+
+            .nav-link:not(:first-child) {
+                margin-inline-start: 4rem;
+            }
+
+            .nav-link {
+                opacity: var(--lightened-opacity);
+            }
+
+            .router-link-exact-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        & {
+            position: initial;
+            height: auto;
+            padding-block: 3rem;
+
+            .header-inner {
+                grid-row-gap: 2rem;
+                grid-template-areas: "logo logo logo logo" "title title nav nav";
+
+                #logo {
+                    // justify-self: center;
+                }
+
+                nav {
+                    .nav-link:not(:first-child) {
+                        margin-inline-start: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#logo {
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    animation: rotate 12s linear infinite;
+    grid-area: logo;
+    fill: var(--color-primary);
+
+    .logo-fill {
+        fill: inherit;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

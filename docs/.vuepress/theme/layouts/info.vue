@@ -2,31 +2,32 @@
   <div>
     <Header />
     <div class="container">
-        <div style="padding: calc(var(--vertical-spacing) * 4) 0;">
-            <p>Who is this guy?</p>
-            <div id="bio"><Content /></div>
+        <hr>
+        <div class="pad-block-4">
+            <p class="margin-block-end-1">Who is this guy?</p>
+            <div id="bio" style="width: 100%; max-width: 135ch"><Content /></div>
         </div>
         <div class="grid">
-            <div class="span-2 t-span-4 portrait">
+            <div class="span-6 margin-block-end-4">
                 <img :src="this.$page.frontmatter.image" alt="Portrait" style="width: 90%;">
             </div>
-            <div class="span-2 t-span-4">
-                <div class="grid info-group">
-                    <p class="span-2 m-span-4">How can I get in touch?</p>
-                    <div class="span-2 m-span-4 lightened">
-                        <p v-for="(link, index) in this.$page.frontmatter.links" :key="`link-${index}`">
+            <div class="span-6">
+                <div class="grid margin-block-end-4">
+                    <p class="span-6 margin-block-end-1">How can I get in touch?</p>
+                    <ul class="span-6 lighten" role="list">
+                        <li v-for="(link, index) in this.$page.frontmatter.links" :key="`link-${index}`">
                             <a :href="link.link">{{link.text}}</a>
-                        </p>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
 
-                <div class="grid info-group">
-                    <p class="span-2 m-span-4">What's he into?</p>
-                    <div class="span-2 m-span-4 lightened">
-                        <p v-for="(interest, index) in this.$page.frontmatter.interests" :key="`interest-${index}`">
+                <div class="grid margin-block-end-4">
+                    <p class="span-6  margin-block-end-1">What's he into?</p>
+                    <ul class="span-6 lighten" role="list">
+                        <li v-for="(interest, index) in this.$page.frontmatter.interests" :key="`interest-${index}`">
                             {{interest}}
-                        </p>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -39,11 +40,10 @@
 <script>
 import Header from '@theme/components/Header.vue'
 import Footer from '@theme/components/Footer.vue'
-import VimeoEmbed from '@theme/components/VimeoEmbed.vue'
-import styles from '@theme/styles/index.css'
+import styles from '@theme/styles/index.styl'
 
 export default {
-    components: { Header, VimeoEmbed, Footer },
+    components: { Header, Footer },
     mounted() {
         let vimeoScript = document.createElement("script")
         vimeoScript.setAttribute("src", "https://player.vimeo.com/api/player.js")
@@ -58,7 +58,7 @@ export default {
 }
 
 #bio a {
-    /* white-space: nowrap; */
+    white-space: nowrap;
 }
 #bio p{
     font-size: 2.5rem;

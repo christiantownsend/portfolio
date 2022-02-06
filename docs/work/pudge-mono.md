@@ -15,26 +15,26 @@ tags:
 
 ![Pudge Mono Header](/static/Pudge-Header.png)
 
-::: span 2
+::: span 6
 ![Pudge Mono Large Glyph](/static/Pudge-Large-Letter.png)
 :::
 
-::: span 2
+::: span 6
 ![Pudge Mono Glyphs](/static/Pudge-Glyphs.png)
 :::
 
-::: span 2
+::: span 6
 ![For Your Enjoyment Poster](/static/Pudge_Poster__0003_For-Your-Enjoyment.png)
 :::
 
-::: span 2
+::: span 6
 ![I Love Lucy Poster](/static/Pudge_Poster__0002_I-Love-Lucy.png)
 :::
 
-::: span 2
+::: span 6
 ![Wash Ur Hands Poster](/static/Pudge_Poster__0000_Wash-Ur-Hands.png)
 :::
 
-::: span 2
+::: span 6
 ![Roses Poster](/static/Pudge_Poster__0001_Roses.png)
 :::
