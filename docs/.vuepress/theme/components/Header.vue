@@ -6,8 +6,7 @@
         </div>
         <div class="title">Christian Townsend</div>
         <nav>
-            <router-link class="nav-link" to="/">Work</router-link>
-            <router-link class="nav-link" to="/info">Info</router-link>
+            <router-link class="nav-link" v-for="item in $themeConfig.nav" :key="item.text" :to="item.url">{{ item.text }}</router-link>
         </nav>
     </div>
 </header>
@@ -18,12 +17,6 @@ import Logo from '@theme/components/Logo.vue'
 
 export default {
     components: { Logo },
-    props: {
-        spaced: {
-            type: Boolean,
-            default: true
-        }
-    }
 }
 </script>
 

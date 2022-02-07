@@ -42,9 +42,9 @@ export default {
     }
   },
   mounted() {
-    let vimeoScript = document.createElement("script")
-    vimeoScript.setAttribute("src", "https://player.vimeo.com/api/player.js")
-    document.head.appendChild(vimeoScript);
+    // let vimeoScript = document.createElement("script")
+    // vimeoScript.setAttribute("src", "https://player.vimeo.com/api/player.js")
+    // document.head.appendChild(vimeoScript);
 
     this.$site.pages.forEach(page => {
         // console.log(page.frontmatter)
