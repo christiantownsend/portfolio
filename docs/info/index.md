@@ -9,7 +9,7 @@ links:
   - text: LinkedIn
     link: https://www.linkedin.com/in/christian-townsend
   - text: Resume
-    link: https:/ctownsend.me/static/christian-townsend-resume.pdf
+    link: /static/christian-townsend-resume.pdf
 interests:
   - Typography
   - Branding

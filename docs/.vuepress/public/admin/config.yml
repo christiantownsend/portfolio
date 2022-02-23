@@ -5,7 +5,7 @@ backend:
 
 local_backend: false
 
-site_url: https://ctownsend-portfolio.netlify.app
+site_url: https://ctownsend.me
 logo_url: "/static/favicon.svg"
 
 media_folder: "docs/.vuepress/public/static"
