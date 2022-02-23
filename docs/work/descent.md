@@ -18,4 +18,28 @@ collaborators:
   - name: Katy Spore
     link: https://katyspore.com/
 ---
-test
+![Descent ](/static/descent-laid-out.jpg)
+
+::: span 6
+![Descent ](/static/descent-box-open.jpg)
+:::
+
+::: span 6
+![Descent ](/static/descent-piece-bags.jpg)
+:::
+
+![Descent ](/static/descent-cards.jpg)
+
+![Descent ](/static/descent-full-board.jpg)
+
+![Descent ](/static/descent-scoreboards.jpg)
+
+::: span 6
+![Descent ](/static/descent-box-closed.jpg)
+:::
+
+::: span 6
+![Descent ](/static/descent-instructions.jpg)
+:::
+
+![Descent ](/static/descent-gameplay.jpeg)
