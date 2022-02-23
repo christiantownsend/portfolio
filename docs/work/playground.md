@@ -13,4 +13,44 @@ tags:
   - 3D
   - Motion
 ---
-body
+<vimeo videoID="680721338" aspect-ratio="16 / 9"/>
+
+::: span 4
+![Playground](/static/playground-soft-touch-01.jpg)
+:::
+
+::: span 4
+![Playground](/static/playground-soft-touch-02.jpg)
+:::
+
+::: span 4
+![Playground](/static/playground-soft-touch-03.jpg)
+:::
+
+::: span 6
+![Playground](/static/playground-cell.jpg)
+:::
+
+::: span 6
+![Playground](/static/playground-caustics.jpg)
+:::
+
+![Playground](/static/playground-natural.jpg)
+
+::: span 6
+<vimeo videoID="577815857" aspect-ratio="1 / 1"/>
+:::
+
+::: span 6
+<vimeo videoID="577815699" aspect-ratio="1 / 1"/>
+:::
+
+<vimeo videoID="680728984" aspect-ratio="16 / 9"/>
+
+::: span 6
+<vimeo videoID="577814474" aspect-ratio="1 / 1"/>
+:::
+
+::: span 6
+![Playground](/static/playground-tracker-grid.jpg)
+:::
