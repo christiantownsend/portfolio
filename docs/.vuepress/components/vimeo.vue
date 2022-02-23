@@ -8,12 +8,13 @@
 export default {
     data() {
         return {
-            source: "https://player.vimeo.com/video/" + this.videoID + "?background=1&dnt=1&quality=1080p"
+            source: "https://player.vimeo.com/video/" + this.videoID + "?background=1&dnt=1&quality=" + (this.quality || 'auto')
         }
     },
     props: {
         videoID: String,
-        aspectRatio: String
+        aspectRatio: String,
+        quality: String
     }
 }
 </script>
