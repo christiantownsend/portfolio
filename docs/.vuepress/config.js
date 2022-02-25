@@ -15,6 +15,10 @@ module.exports = {
         ['link', { rel: 'preconnect', href: 'https://f.vimeocdn.com' }],
         ['link', { rel: 'preload', href: 'https://player.vimeo.com/api/player.js', as: 'script' }],
         ['script', { url: 'https://player.vimeo.com/api/player.js' }],
+        ['script', {
+            async: true,
+            src: 'https://www.googletagmanager.com/gtag/js?id=UA-131761573-2'
+        }],
         ['script', {}, `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
