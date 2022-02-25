@@ -15,6 +15,13 @@ module.exports = {
         ['link', { rel: 'preconnect', href: 'https://f.vimeocdn.com' }],
         ['link', { rel: 'preload', href: 'https://player.vimeo.com/api/player.js', as: 'script' }],
         ['script', { url: 'https://player.vimeo.com/api/player.js' }],
+        ['script', {}, `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-131761573-2');
+        `],
     ],
     markdown: {
         anchor: { permalink: false, permalinkBefore: true, permalinkSymbol: '#' },
@@ -37,12 +44,6 @@ module.exports = {
                 before: info => `<div class="span-${info} m-span-4">`,
                 after: '</div>',
             },
-        ],
-        [
-            '@vuepress/plugin-google-analytics',
-            {
-                'ga': 'UA-131761573-2' // UA-00000000-0
-            }
         ],
     ],
 }
