@@ -17,14 +17,14 @@ module.exports = {
         ['script', { url: 'https://player.vimeo.com/api/player.js' }],
         ['script', {
             async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=UA-131761573-2'
+            src: 'https://www.googletagmanager.com/gtag/js?id=G-6GQJFBLNM6'
         }],
         ['script', {}, `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
         
-            gtag('config', 'UA-131761573-2');
+            gtag('config', 'G-6GQJFBLNM6');
         `],
     ],
     markdown: {
