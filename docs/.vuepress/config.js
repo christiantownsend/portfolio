@@ -49,5 +49,11 @@ module.exports = {
                 after: '</div>',
             },
         ],
+        [
+            'sitemap',
+            {
+                hostname: 'https://ctownsend.me'
+            },
+        ]
     ],
 }

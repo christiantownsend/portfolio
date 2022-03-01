@@ -8,11 +8,13 @@
     "vuepress": "^1.8.2",
     "vuepress-plugin-clean-urls": "^1.1.2",
     "vuepress-plugin-container": "^2.1.5",
-    "vuepress-plugin-nprogress": "^1.1.8"
+    "vuepress-plugin-nprogress": "^1.1.8",
+    "vuepress-plugin-sitemap": "^2.3.1"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:serve": "vuepress serve docs"
-  }
+  },
+  "dependencies": {}
 }
