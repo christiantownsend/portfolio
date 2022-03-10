@@ -9,6 +9,7 @@ module.exports = {
         lastUpdated: true,
     },
     head: [
+        ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}],
         ['link', { rel: 'icon', href: '/static/favicon.svg' }],
         ['link', { rel: 'preconnect', href: 'https://player.vimeo.com' }],
         ['link', { rel: 'preconnect', href: 'https://i.vimeocdn.com' }],
