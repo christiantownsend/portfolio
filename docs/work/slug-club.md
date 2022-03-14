@@ -27,9 +27,19 @@ collaborators:
   - name: The Collected Works
     link: https://thecollectedworks.com/
 ---
-<vimeo videoID="665367508" aspect-ratio="16 / 9"/>
+<!-- <vimeo videoID="665367508" aspect-ratio="16 / 9"/> -->
 
 <vimeo videoID="665811599" aspect-ratio="16 / 9"/>
+
+::: span 6
+![Wordmark Curves](/static/TheCollectedWorks_SlugClub_v1_2.jpg)
+:::
+
+::: span 6
+![Slug Illustration](/static/TheCollectedWorks_SlugClub_v1_3.jpg)
+:::
+
+![Label Render](/static/TheCollectedWorks_SlugClub_v1_3-1.jpg)
 
 <vimeo videoID="662009441" aspect-ratio="16 / 9"/>
 
@@ -45,6 +55,24 @@ collaborators:
 
 <vimeo videoID="662090934" aspect-ratio="16 / 9"/>
 
+::: span 6
+![Can Render 1](/static/TheCollectedWorks_SlugClub_v1_6.jpg)
+:::
+
+::: span 6
+![Can Render 2](/static/TheCollectedWorks_SlugClub_v1_7.jpg)
+:::
+
+::: span 6
+![Can Render 3](/static/TheCollectedWorks_SlugClub_v1_8.jpg)
+:::
+
+::: span 6
+![Can Render 4](/static/TheCollectedWorks_SlugClub_v1_9.jpg)
+:::
+
+![Can Render Landscape 1](/static/TheCollectedWorks_SlugClub_v1_1-1.jpg)
+
 <vimeo videoID="664922114" aspect-ratio="16 / 9"/>
 
 ::: span 6
@@ -56,3 +84,17 @@ collaborators:
 :::
 
 <vimeo videoID="664922132" aspect-ratio="16 / 9"/>
+
+::: span 6
+![Tote](/static/TheCollectedWorks_SlugClub_v1_13.jpg)
+:::
+
+::: span 6
+![Postcards](/static/TheCollectedWorks_SlugClub_v2_16.jpg)
+:::
+
+<vimeo videoID="668807625" aspect-ratio="16 / 9"/>
+
+![Brand Guidelines](/static/TheCollectedWorks_SlugClub_v2_Brand-Guidelines.jpg)
+
+![Can Render Landscape 2](/static/TheCollectedWorks_SlugClub_v1_2-1.jpg)
