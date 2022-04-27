@@ -32,8 +32,8 @@ export default {
 <style>
 .dark-mode-toggle {
     display: block;
-    height: 2em;
-    width: 2em;
+    height: 1.8em;
+    width: 1.8em;
     background: none;
     outline: none;
     border: none;

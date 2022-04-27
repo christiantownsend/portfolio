@@ -7,6 +7,13 @@
 
 @font-face {
     font-family: 'PP Neue Montreal';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/static/fonts/PPNeueMontreal-Medium.woff2');
+}
+
+@font-face {
+    font-family: 'PP Neue Montreal';
     font-weight: normal;
     font-style: italic;
     src: url('/static/fonts/PPNeueMontreal-Italic.woff2');
@@ -44,6 +51,7 @@ body{
     background: var(--color-neutral-900);
     color: var(--color-neutral-100);
     font-size: var(--font-size);
+    font-weight: var(--font-weight);
 }
 
 hr {
@@ -64,8 +72,8 @@ hr {
     a {
         text-decoration: underline;
         text-decoration-skip-ink: all;
-        text-decoration-thickness: .075em;
-        text-underline-offset: .15em;
+        text-decoration-thickness: .08em;
+        text-underline-offset: .18em;
         text-decoration-color: var(--color-primary);
     }
 }
