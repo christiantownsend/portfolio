@@ -52,12 +52,18 @@ body{
     color: var(--color-neutral-100);
     font-size: var(--font-size);
     font-weight: var(--font-weight);
+
+    transition: color 0.5s, background-color 0.5s;
 }
 
 hr {
     margin: 0;
     opacity: var(--lightened-opacity)
     color: var(--color-neutral-100);
+    display: block;
+    border: none;
+    height: 1px;
+    background: currentColor;
 }
 
 .container {
