@@ -15,7 +15,6 @@
 <script>
 import Logo from '@theme/components/Logo.vue'
 
-//Useless comment
 export default {
     components: { Logo },
 }
