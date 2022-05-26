@@ -4,7 +4,7 @@
     <div class="container">
       <hr>
       <router-link class="project no-arrow" v-for="(project, index) in projects" :key="project.key" :to="project.path" @mouseenter.native="activeProject = index">
-        <div class="project-row pad-block-2 gap-4" :class="{active: index == activeProject}">
+        <div class="project-row pad-block-2 gap-horizontal-4 gap-vertical-2" :class="{active: index == activeProject}">
           <div class="project-info span-6 gap-1">
             <p class="project-title"><a>{{project.frontmatter.title}}</a></p>
             <div class="project-desc gap-2">
