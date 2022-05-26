@@ -15,27 +15,26 @@ export default {
     components: { DarkModeToggle },
     data() {
         return {
-            lastUpdated: '',
+            lastUpdated: 'May 2022',
         }
     },
     mounted() {
+        // let updatedList = [];
+        // this.$site.pages.forEach(page => {
+        //     if (!page.lastUpdated) return
+        //     let update = page.lastUpdated.split(',')[0].split('/').reverse().join('/');
+        // })
 
-        let updatedList = [];
-        this.$site.pages.forEach(page => {
-            if (!page.lastUpdated) return
-            let update = page.lastUpdated.split(',')[0].split('/').reverse().join('/');
-        })
+        // console.log(updatedList)
 
-        console.log(updatedList)
+        // let lastUpdate = updatedList.sort((a, b) => (a < b) ? 1 : -1)[0].split('/');
 
-        let lastUpdate = updatedList.sort((a, b) => (a < b) ? 1 : -1)[0].split('/');
+        // const date = new Date();
+        // date.setFullYear(lastUpdate[0]);
+        // date.setDate(lastUpdate[1]);
+        // date.setMonth(lastUpdate[2]-1);
 
-        const date = new Date();
-        date.setFullYear(lastUpdate[0]);
-        date.setDate(lastUpdate[1]);
-        date.setMonth(lastUpdate[2]-1);
-
-        this.lastUpdated = date.toLocaleString('en-US', {month: 'long', year: 'numeric'});
+        // this.lastUpdated = date.toLocaleString('en-US', {month: 'long', year: 'numeric'});
     },
 }
 </script>
