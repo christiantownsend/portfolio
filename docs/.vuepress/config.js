@@ -4,7 +4,7 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Work', url: '/'},
-            { text: 'Info', url: '/info'},
+            { text: 'Profile', url: '/profile'},
         ],
         lastUpdated: true,
     },

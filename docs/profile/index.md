@@ -1,5 +1,5 @@
 ---
-layout: info
+layout: profile
 image: /static/bio-image.png
 links:
   - text: Email

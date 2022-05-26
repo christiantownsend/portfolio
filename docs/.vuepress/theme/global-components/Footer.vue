@@ -22,9 +22,11 @@ export default {
 
         let updatedList = [];
         this.$site.pages.forEach(page => {
+            if (!page.lastUpdated) return
             let update = page.lastUpdated.split(',')[0].split('/').reverse().join('/');
-            updatedList.push(update);
         })
+
+        console.log(updatedList)
 
         let lastUpdate = updatedList.sort((a, b) => (a < b) ? 1 : -1)[0].split('/');
 
