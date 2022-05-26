@@ -23,9 +23,10 @@
         width: 100%;
 
         display: grid;
-        gap: 1rem;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-areas: "logo title nav nav";
+        gap: 2rem;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: "logo logo logo title title title nav nav nav nav nav nav";
+        // grid-template-areas: "title title title title nav nav nav nav nav nav nav nav";
         align-items: center;
 
         color: var(--color-neutral-100);
@@ -65,7 +66,7 @@
 
             .header-inner {
                 grid-row-gap: 2rem;
-                grid-template-areas: "logo logo logo logo" "title title nav nav";
+                grid-template-areas: "logo logo logo logo logo logo logo logo logo logo logo logo" "title title title title title title nav nav nav nav nav nav";
 
                 #logo {
                     // justify-self: center;
