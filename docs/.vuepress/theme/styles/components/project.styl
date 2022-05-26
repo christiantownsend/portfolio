@@ -2,15 +2,41 @@
   display: block;
 }
 
+.project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+
+  .project-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    // font-size: 4em;
+    font-size: clamp(2.5em, calc(0.22rem + 5.46vw), 5.00em);
+    line-height: 1;
+    z-index: 5;
+  }
+
+  .project-desc {
+    display: flex
+    // justify-content: space-between;
+    align-items: center;
+    font-size: .8em;
+
+    .project-year {
+      padding: .2em 1.5em;
+      border-radius: 100px;
+      border: 1px solid var(--color-neutral-100);
+    }
+  }
+
+}
+
 .project-preview, .project-placeholder {
   // visibility: visible;
   will-change: transform;
   transition: transform 1.5s var(--default-timing);
   height: 100%;
-}
-
-.project-info * {
-  min-height: content;
 }
 
 .project-thumbnail-mask {

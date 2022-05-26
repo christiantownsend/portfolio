@@ -4,10 +4,13 @@
     <div class="container">
       <hr>
       <router-link class="project no-arrow" v-for="(project, index) in projects" :key="project.key" :to="project.path" @mouseenter.native="activeProject = index">
-        <div class="grid gap-horizontal-2 project-row pad-block-2" :class="{active: index == activeProject}">
-          <div class="project-info span-6 grid gap-2 static pad-block-end-2">
-            <p class="project-tags span-6 lighten">{{project.frontmatter.tags.join(", ")}}</p>
-            <p class="project-title span-6 m-first"><a>{{project.frontmatter.title}}</a></p>
+        <div class="grid gap-2 project-row pad-block-2" :class="{active: index == activeProject}">
+          <div class="project-info span-6 gap-1">
+            <p class="project-title pad-inline-end-2"><a>{{project.frontmatter.title}}</a></p>
+            <div class="project-desc gap-2">
+              <p class="project-year">{{project.frontmatter.year}}</p>
+              <p class="project-tags">{{project.frontmatter.tags.join(", ")}}</p>
+            </div>
           </div>
           <div class="span-6 project-thumbnail-mask" style="pointer-events: none; position: relative; aspect-ratio: 16 / 9;">
             <!-- <img class="project-thumbnail project-placeholder" src="/static/placeholder.svg" alt="" srcset=""> -->
