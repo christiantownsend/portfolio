@@ -17,6 +17,7 @@ description: Slug Club is an elevated kombucha (literally!), created with
 visible: true
 vimeo: "666118319"
 thumb: /static/slug-club-placeholder.jpg
+color: "#317F82"
 tags:
   - Branding
   - Packaging

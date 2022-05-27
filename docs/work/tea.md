@@ -10,6 +10,7 @@ description: This tea package is a project I made while studying abroad in
 visible: true
 vimeo: "573454203"
 thumb: /static/tea-placeholder.jpg
+color: "#f0bb2b"
 tags:
   - Packaging
   - Branding

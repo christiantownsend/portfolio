@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <!-- <Header /> -->
-    <div class="container">
+    <div class="container content">
       <hr>
       <router-link class="project no-arrow" v-for="(project, index) in projects" :key="project.key" :to="project.path" @mouseenter.native="activeProject = index">
         <div class="project-row pad-block-2 gap-horizontal-4 gap-vertical-2" :class="{active: index == activeProject}">
@@ -16,8 +14,8 @@
             <!-- <img class="project-thumbnail project-placeholder" src="/static/placeholder.svg" alt="" srcset=""> -->
             <!-- <Placeholder class="project-thumbnail project-placeholder"/> -->
             <div class="project-preview">
-              <img class="project-thumbnail" :src="project.frontmatter.thumb" alt="" srcset="">
-              <vimeo :videoID="project.frontmatter.vimeo" />
+              <!-- <img class="project-thumbnail" :src="project.frontmatter.thumb" alt="" srcset=""> -->
+              <vimeo :videoID="project.frontmatter.vimeo" :thumbnail="project.frontmatter.thumb" :placeholderColor="project.frontmatter.color"/>
             </div>
           </div>
         </div>
@@ -25,8 +23,6 @@
       </router-link>
 
     </div>
-    <!-- <Content /> -->
-  </div>
 </template>
 
 <script>

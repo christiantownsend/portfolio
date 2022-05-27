@@ -9,6 +9,7 @@ description: Playground is a collection of various 3D experiments and
 visible: true
 vimeo: "674049018"
 thumb: /static/playground-placeholder.jpg
+color: "#d43d47"
 tags:
   - 3D
   - Motion

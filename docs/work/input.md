@@ -11,6 +11,7 @@ description: Input is a quarterly publication focusing on the surprisingly deep
 visible: true
 vimeo: "573454129"
 thumb: /static/input-placeholder.jpg
+color: "#0d3627"
 tags:
   - Type
   - Editorial

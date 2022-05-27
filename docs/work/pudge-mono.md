@@ -10,6 +10,7 @@ description: Pudge Mono is a high-contrast, reversed-stress, monospace display
 visible: true
 vimeo: "573454194"
 thumb: /static/pudge-placeholder.jpg
+color: "#000000"
 tags:
   - Typeface
 ---
