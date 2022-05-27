@@ -86,7 +86,7 @@ export default {
       const color = el.__vue__.$page.frontmatter.color || "var(--color-neutral-100)"
       this.transitionColor = color;
       this.transitioning = true
-      setTimeout(done, 400);
+      setTimeout(done, 500);
     },
     enter(el, done) {
       this.transitioning = false
