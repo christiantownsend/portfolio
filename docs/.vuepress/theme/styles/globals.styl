@@ -16,6 +16,8 @@
     --default-timing: cubic-bezier(0.23, 0, 0.24, 1);
     --lightened-opacity: .65;
     --mobile-breakpoint: 700px;
+
+    --transition-duration: .25s;
 }
 
 :root.dark {
@@ -23,15 +25,6 @@
     --color-neutral-900: #12141d;
     --color-neutral-900-t: rgba(#12141d, 0.8);
     --color-neutral-100: #f1f1f1;
+    --color-neutral-100-t: rgba(#f1f1f1, 0.2);
     --lightened-opacity: .6;
 }
-
-.v-enter-active,
-.v-leave-active {
-  transition: all 0.25s ease;
-}
-
-// .v-enter,
-// .v-leave-to {
-//   opacity: 0;
-// }

@@ -1,8 +1,8 @@
 <template>
-    <div :style="'aspect-ratio: ' +  (aspectRatio || '16 / 9') + '; position: relative;'">
+    <div :style="'aspect-ratio: ' +  (aspectRatio || '16 / 9') + '; position: relative; overflow: hidden'">
         <div style="position: absolute; inset: 0; background: transparent; z-index: 2;"></div> <!-- THIS IS TO MAKE CURSOR INTERACTIONS OVER THE IFRAME WORK -->
-        <iframe :src="source" frameborder="0" allow="fullscreen" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block"></iframe>
-        <div class="vimeo-loader" :style="'background:' + (thumbnail ? 'url(' + thumbnail + ')' : null || placeholderColor || $page.frontmatter.color || 'var(--color-neutral-100-t)') + ' no-repeat center/cover;'"></div>
+        <iframe :src="source" frameborder="0" allow="fullscreen" style="position: absolute; inset: -3px; width: calc(100% + 6px); height: calc(100% + 6px); display: block"></iframe>
+        <div :class="'vimeo-loader ' + (thumbnail ? '' : 'vimeo-loader-animate')" :style="'background:' + (thumbnail ? 'url(' + thumbnail + ')' : null || placeholderColor || $page.frontmatter.color || 'var(--color-neutral-100-t)') + ' no-repeat center/cover;'"></div>
     </div>
 </template>
 
@@ -43,6 +43,14 @@ export default {
     transform-origin: top left;
     transform: scaleX(0);
 
+    /* animation-name: loader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+    animation: loader 4s cubic-bezier(1, 0, 0, 1) infinite; */
+}
+
+.vimeo-loader.vimeo-loader-animate::after {
     animation-name: loader;
     animation-duration: 2s;
     animation-iteration-count: infinite;

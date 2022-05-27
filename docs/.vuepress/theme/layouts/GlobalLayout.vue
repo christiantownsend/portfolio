@@ -1,19 +1,18 @@
 <template>
   <div>
-    <div id="transition-element" :class="transitioning ? 'transitioning' : ''" :style="'background-color: ' + this.transitionColor + ';'"></div>
+    <div id="transition-element" :class="(transitioning ? 'transitioning ' : '') + (transitionDirection)" :style="'background-color: ' + transitionColor + ';' + (transitionOverlayActive ? 'opacity: 1;' : 'opacity: 0;')"></div>
     <CustomCursor />
     <transition
       mode="out-in"
-      :duration="250"
     >
       <Header v-if="layoutName != 'project'" />
       <ProjectHeader v-else/>
     </transition>
     <transition
+      :name="transitionName"
       @leave="leave"
       @enter="enter"
       mode="out-in"
-      :css="false"
     >
       <component :is="layout" />
     </transition>
@@ -31,7 +30,10 @@ export default {
     return {
       layoutName: '',
       transitioning: false,
-      transitionColor: 'var(--color-neutral-100)'
+      transitionOverlayActive: false,
+      transitionName: 'slide-left',
+      transitionDirection: 'left',
+      transitionColor: 'var(--color-neutral-100)',
     }
   },
   computed: {
@@ -40,6 +42,31 @@ export default {
       setGlobalInfo('layout', layout)
       this.layoutName = layout
       return Vue.component(layout)
+    }
+  },
+  watch: {
+    '$route'(to, from){
+      const to_depth = to.path.split('/').length
+      const from_depth = from.path.split('/').length
+
+      if (to_depth < from_depth) {
+        // GOING BACK
+        this.transitionName = 'slide-left'
+        this.transitionDirection = 'left'
+      }
+      else {
+        this.transitionName = 'slide-right'
+        this.transitionDirection = 'right'
+      }
+
+      if (to.path.startsWith('/work/') || from.path.startsWith('/work/')) {
+        this.transitionName = 'none'
+        this.transitionOverlayActive = true;
+      }
+      else {
+        this.transitionOverlayActive = false;
+      }
+      // this.transitionDirection = to_depth < from_depth ? 'left' : 'right'
     }
   },
   methods: {
@@ -54,18 +81,16 @@ export default {
       }
       return 'NotFound'
     },
-    enter(el, done) {
-      console.log("TRANSITION Ended")
-      // console.log(el.__vue__.$page.frontmatter.color);
-      this.transitioning = false
-      done()
-    },
     leave(el, done) {
-      console.log("TRANSITION Started")
+      // console.log("TRANSITION Started")
       const color = el.__vue__.$page.frontmatter.color || "var(--color-neutral-100)"
       this.transitionColor = color;
       this.transitioning = true
       setTimeout(done, 400);
+    },
+    enter(el, done) {
+      this.transitioning = false
+      // done()
     },
   }
 }
@@ -78,19 +103,44 @@ export default {
   inset: 0;
   background-color: var(--color-neutral-100);
   z-index: 9999;
-  transition: transform .25s cubic-bezier(1, 0, 0, 1);
+  transition: transform var(--transition-duration) cubic-bezier(1, 0, 0, 1);
 
   /* opacity: .5; */
   /* mix-blend-mode: exclusion; */
   
-  transform-origin: bottom right;
   transform: scaleX(0);
 }
 
-#transition-element.transitioning {
+#transition-element.left {transform-origin: bottom right;}
+#transition-element.right {transform-origin: top left;}
+#transition-element.transitioning.left {transform-origin: top left;}
+#transition-element.transitioning.right {transform-origin: bottom right;}
 
-  transform-origin: top left;
+#transition-element.transitioning {
   transform: scaleX(1);
 }
 
+.v-enter-active,
+.v-leave-active {
+  transition: all var(--transition-duration) ease;
+}
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: all calc(var(--transition-duration) * 2) ease;
+}
+
+.slide-right-enter,
+.slide-left-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.slide-left-enter,
+.slide-right-leave-to {
+  transform: translateX(-20px);
+  opacity: 0;
+}
 </style>
