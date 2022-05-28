@@ -6,7 +6,7 @@ module.exports = {
             { text: 'Work', url: '/'},
             { text: 'Profile', url: '/profile'},
         ],
-        lastUpdated: true,
+        lastUpdated: 'May 2022',
     },
     head: [
         ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}],
@@ -43,6 +43,15 @@ module.exports = {
         ],
         ['vuepress-plugin-nprogress'],
         [
+            'vuepress-plugin-autometa',
+            {
+                site: {
+                    name   : 'Christian Townsend | Designer',
+                },
+                canonical_base: 'https://ctownsend.me',
+            }
+        ],
+        [
             'vuepress-plugin-container',
             {
                 type: 'span',
@@ -57,4 +66,5 @@ module.exports = {
             },
         ]
     ],
+    evergreen: true,
 }

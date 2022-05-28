@@ -1,5 +1,5 @@
 <template>
-  <div style="position: fixed; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; flex-flow: column;">
+  <div class="gap-2" style="display: flex; justify-content: center; align-items: center; flex-flow: column; margin-top: auto;">
       <p style="font-size: 2.5rem;">404: Page not found</p>
       <router-link class="no-arrow" to="/">← Back</router-link>
   </div>

@@ -1,7 +1,7 @@
 <template>
   <div>
 
-    <vimeo :videoID="$page.frontmatter.vimeo" :thumbnail="$page.frontmatter.thumb"/>
+    <vimeo :videoID="$page.frontmatter.vimeo" :thumbnail="$page.frontmatter.image"/>
     
     <div class="container">
         <div class="grid pad-block-4">

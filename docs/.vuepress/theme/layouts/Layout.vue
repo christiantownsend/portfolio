@@ -15,7 +15,7 @@
             <!-- <Placeholder class="project-thumbnail project-placeholder"/> -->
             <div class="project-preview">
               <!-- <img class="project-thumbnail" :src="project.frontmatter.thumb" alt="" srcset=""> -->
-              <vimeo :videoID="project.frontmatter.vimeo" :thumbnail="project.frontmatter.thumb" :placeholderColor="project.frontmatter.color"/>
+              <vimeo :videoID="project.frontmatter.vimeo" :thumbnail="project.frontmatter.image" :placeholderColor="project.frontmatter.color"/>
             </div>
           </div>
         </div>

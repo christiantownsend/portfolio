@@ -51,7 +51,7 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Visible", name: "visible", widget: "boolean"}
       - {label: "Vimeo ID", name: "vimeo", widget: "string"}
-      - {label: "Thumbnail", name: "thumb", widget: "image", allow_multiple: false}
+      - {label: "Thumbnail", name: "image", widget: "image", allow_multiple: false}
       - label: "Categories"
         name: "tags"
         widget: "list"
