@@ -4,9 +4,9 @@ module.exports = {
     themeConfig: {
         nav: [
             { text: 'Work', url: '/'},
-            { text: 'Info', url: '/info'},
+            { text: 'Profile', url: '/profile'},
         ],
-        lastUpdated: true,
+        lastUpdated: 'May 2022',
     },
     head: [
         ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}],
@@ -41,7 +41,16 @@ module.exports = {
                 notFoundPath: '/404.html',
             },
         ],
-        ['vuepress-plugin-nprogress'],
+        // ['vuepress-plugin-nprogress'],
+        [
+            'vuepress-plugin-autometa',
+            {
+                site: {
+                    name   : 'Christian Townsend | Designer',
+                },
+                canonical_base: 'https://ctownsend.me',
+            }
+        ],
         [
             'vuepress-plugin-container',
             {
@@ -57,4 +66,5 @@ module.exports = {
             },
         ]
     ],
+    evergreen: true,
 }

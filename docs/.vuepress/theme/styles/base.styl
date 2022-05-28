@@ -43,6 +43,18 @@
     color: var(--color-neutral-900);
 }
 
+html {
+    scrollbar-color: var(--color-neutral-100-t) var(--color-neutral-900);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-neutral-100-t);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-neutral-900);
+}
+
 html * {
     font-family: var(--font-stack);
 }
@@ -54,11 +66,13 @@ body{
     font-weight: var(--font-weight);
 
     transition: color 0.5s, background-color 0.5s;
+    overflow-x: hidden;
 }
 
 hr {
     margin: 0;
-    opacity: var(--lightened-opacity)
+    // opacity: var(--lightened-opacity);
+    opacity: .25;
     color: var(--color-neutral-100);
     display: block;
     border: none;
@@ -66,11 +80,21 @@ hr {
     background: currentColor;
 }
 
+#app > div:is(:first-child) {
+    min-height: 100vh
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
 .container {
     padding-inline: 8%;
 }
 
 .content__default {
+    // position: absolute;
+
     img, picture {
         width: 100%;
     }
@@ -86,8 +110,9 @@ hr {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(12, minmax(0, 1fr));
     white-space: normal;
+    // min-width: 0;
 }
 
 .grid > *:not([class*=span]) {

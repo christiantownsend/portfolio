@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header />
+    <!-- <Header /> -->
     <div class="container">
         <hr>
         <div class="pad-block-4">
@@ -33,17 +33,16 @@
         </div>
         <hr>
     </div>
-    <Footer />
   </div>
 </template>
 
 <script>
-import Header from '@theme/components/Header.vue'
-import Footer from '@theme/components/Footer.vue'
+// import CustomCursor from '@theme/components/CustomCursor.vue'
+// import Header from '@theme/components/Header.vue'
+// import Footer from '@theme/components/Footer.vue'
 import '@theme/styles/index.styl'
 
 export default {
-    components: { Header, Footer },
     mounted() {
         // let vimeoScript = document.createElement("script")
         // vimeoScript.setAttribute("src", "https://player.vimeo.com/api/player.js")

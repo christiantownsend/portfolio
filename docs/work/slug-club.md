@@ -21,7 +21,10 @@ description: Slug Club is an elevated kombucha (literally!), created with
   Club illustration, a piece of their original brand that we just loved too much
   to see go. The end result was a tasty and intelligent system leading the way
   to a bright, fresh new cold one to crack at your next gathering.
+visible: true
+vimeo: "666118319"
 image: /static/slug-club-placeholder.jpg
+color: "#317F82"
 tags:
   - Branding
   - Packaging

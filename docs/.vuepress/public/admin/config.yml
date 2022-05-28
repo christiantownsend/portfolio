@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: christiantownsend/portfolio
-  branch: main # Branch to update (optional; defaults to master)
+  branch: staging # Branch to update (optional; defaults to master)
 
 local_backend: false
 
@@ -16,13 +16,19 @@ collections:
     editor:
       preview: false
     files:
-      - label: "Info"
-        name: "info"
-        file: "docs/info/index.md"
+      - label: "Index"
+        name: "index"
+        file: "docs/index.md"
+        fields:
+          - {label: "Share Image", name: "image", widget: "image"}
+      - label: "Profile"
+        name: "profile"
+        file: "docs/profile/index.md"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden", default: "info"}
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Share Image", name: "image", widget: "image"}
+          - {label: "Bio Image", name: "bio-image", widget: "image"}
           - label: "Links"
             name: "links"
             widget: "list"
@@ -51,7 +57,8 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Visible", name: "visible", widget: "boolean"}
       - {label: "Vimeo ID", name: "vimeo", widget: "string"}
-      - {label: "Thumbnail", name: "thumb", widget: "image", allow_multiple: false}
+      - {label: "Thumbnail", name: "image", widget: "image", allow_multiple: false}
+      - {label: "Color", name: "color", widget: "color", allowInput: true}
       - label: "Categories"
         name: "tags"
         widget: "list"
