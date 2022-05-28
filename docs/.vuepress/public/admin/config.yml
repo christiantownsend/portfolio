@@ -3,7 +3,7 @@ backend:
   repo: christiantownsend/portfolio
   branch: staging # Branch to update (optional; defaults to master)
 
-local_backend: true
+local_backend: false
 
 site_url: https://ctownsend.me
 logo_url: "/static/favicon.svg"
