@@ -1,8 +1,15 @@
 ---
 layout: project
+order: 1
+visible: true
+vimeo: "666118319"
+color: "#317f82"
+collaborators:
+  - name: The Collected Works
+    link: https://thecollectedworks.com/
+thumb: /static/slug-club-placeholder.jpg
 title: Slug Club Kombucha
 year: "2021"
-order: 1
 description: Slug Club is an elevated kombucha (literally!), created with
   ​​Patagonian sourced ingredients, brewed and distributed in Argentina. Our
   design studio was approached to create a complete branding and packaging
@@ -14,18 +21,13 @@ description: Slug Club is an elevated kombucha (literally!), created with
   Club illustration, a piece of their original brand that we just loved too much
   to see go. The end result was a tasty and intelligent system leading the way
   to a bright, fresh new cold one to crack at your next gathering.
-visible: true
-vimeo: "666118319"
-thumb: /static/slug-club-placeholder.jpg
+image: /static/slug-club-placeholder.jpg
 tags:
   - Branding
   - Packaging
   - Type
   - 3D
   - Motion
-collaborators:
-  - name: The Collected Works
-    link: https://thecollectedworks.com/
 ---
 <!-- <vimeo videoID="665367508" aspect-ratio="16 / 9"/> -->
 
