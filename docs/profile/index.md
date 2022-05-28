@@ -1,6 +1,7 @@
 ---
 layout: profile
 image: /static/bio-image.png
+bio-image: /static/bio-image.png
 links:
   - text: Email
     link: mailto:christian@ctownsend.me
