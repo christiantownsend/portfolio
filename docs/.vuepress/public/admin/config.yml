@@ -35,6 +35,16 @@ collections:
             fields:
               - {label: "Text", name: "text", widget: "string"}
               - {label: "Link", name: "link", widget: "string"}
+          - label: "Features"
+            name: "features"
+            widget: "list"
+            fields:
+              - {label: "Text", name: "text", widget: "string"}
+              - {label: "Link", name: "link", widget: "string"}
+          - label: "Capabilities"
+            name: "capabilities"
+            widget: "list"
+            field: {label: "Capability", name: "capability", widget: "string"}
           - label: "Interests"
             name: "interests"
             widget: "list"

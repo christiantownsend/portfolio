@@ -7,20 +7,36 @@ links:
     link: mailto:christian@ctownsend.me
   - text: Instagram
     link: https://www.instagram.com/_twerkus/
-  - text: LinkedIn
-    link: https://www.linkedin.com/in/christian-townsend
   - text: Resume
     link: /static/christian-townsend-resume.pdf
+features:
+  - text: It's Nice That
+    link: https://www.itsnicethat.com/news/the-collected-works-slug-club-kombucha-graphic-design-050422
+  - text: The Dieline
+    link: https://thedieline.com/blog/2022/5/5/slug-club-kombucha-shakes-up-the-saturated-kombucha-industry?
+  - text: PRINT Magazine
+    link: https://www.printmag.com/packaging-design/fermented-beverages-have-never-looked-as-charming-as-slug-club-kombucha/
+  - text: Brand New
+    link: https://www.underconsideration.com/brandnew/archives/new_logo_identity_and_packaging_for_slug_club_by_the_collected_works.php#disqus_thread
+capabilities:
+  - Branding & Identity
+  - Experiential Design
+  - Web Design
+  - Packaging Design
+  - 3D Motion
+  - Generative Design (3D/2D)
+  - Interactive
 interests:
   - Typography
-  - Branding
-  - 3D Graphics / Motion
-  - Editorial
-  - Type Design
-  - Generative Art
+  - Music
   - Exhibition
-  - Packaging
+  - Generative Art (Not NFTs!)
+  - Mechanical Keyboards
+  - Architecture
+  - K-Dramas
 ---
-Christian is an NYC-based designer currently working with [The Collected Works](https://thecollectedworks.com/)
+Christian Townsend is an NYC-based multidisciplinary designer working with [The Collected Works](https://thecollectedworks.com/)
 
 He's a collector of hobbies— outside of work you may find him building keyboards, doodling in his sketchbook, coding some shit, cooking, or most recently shredding it in guitar hero. When designing, he particularly enjoys building tools to make his life easier and spending time getting the <span class="nowrap">details right.</span>
+
+He’s currently available for freelance projects, for clients in the areas of music, culture, or technology.

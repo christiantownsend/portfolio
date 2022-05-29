@@ -6,7 +6,7 @@
           <div class="project-info span-6 gap-1">
             <p class="project-title"><a>{{project.frontmatter.title}}</a></p>
             <div class="project-desc gap-2">
-              <p class="project-year">{{project.frontmatter.year}}</p>
+              <p class="project-year pill">{{project.frontmatter.year}}</p>
               <p class="project-tags">{{project.frontmatter.tags.join(", ")}}</p>
             </div>
           </div>
