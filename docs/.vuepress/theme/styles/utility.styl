@@ -101,6 +101,11 @@ for num in (1..12) {
 @media screen and (max-width: 800px) {
     *:not(.static) > [class*=span] {
         grid-column-start: span 12;
+        width: 100%;
+    }
+
+    [class*=gap] {
+        column-gap: 1rem;
     }
 
     .m-first {
