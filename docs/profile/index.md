@@ -13,7 +13,7 @@ features:
   - text: It's Nice That
     link: https://www.itsnicethat.com/news/the-collected-works-slug-club-kombucha-graphic-design-050422
   - text: The Dieline
-    link: https://thedieline.com/blog/2022/5/5/slug-club-kombucha-shakes-up-the-saturated-kombucha-industry?
+    link: https://thedieline.com/blog/2022/6/1/pack-of-the-month-slug-club?
   - text: PRINT Magazine
     link: https://www.printmag.com/packaging-design/fermented-beverages-have-never-looked-as-charming-as-slug-club-kombucha/
   - text: Brand New

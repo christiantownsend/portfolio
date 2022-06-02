@@ -26,10 +26,6 @@
 </template>
 
 <script>
-// import CustomCursor from '@theme/components/CustomCursor.vue'
-// import Header from '@theme/components/Header.vue'
-// import Footer from '@theme/components/Footer.vue'
-// import Placeholder from '@theme/components/Placeholder.vue'
 import '@theme/styles/index.styl'
 
 export default {
