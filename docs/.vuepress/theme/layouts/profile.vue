@@ -70,12 +70,19 @@ export default {}
 }
 #bio p{
     /* font-size: 1.8em; */
-    font-size: clamp(1.25rem, calc(0.42rem + 1.67vw), 1.88rem);
+    /* font-size: clamp(1.25rem, calc(0.42rem + 1.67vw), 1.88rem); */
+    font-size: clamp(1.13rem, calc(0.03rem + 2.20vw), 2.50rem);
     margin-bottom: var(--spacing-unit);
 }
 
 .profile-info-group {
     border-top: 1px solid var(--color-neutral-100-t);
     grid-auto-rows: minmax(min-content, max-content);
+}
+
+.profile-info-group:hover .pill {
+    color: var(--color-neutral-900);
+    background: var(--color-neutral-100);
+    transform: scale(1.075);
 }
 </style>
