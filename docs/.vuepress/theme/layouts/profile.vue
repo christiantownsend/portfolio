@@ -5,7 +5,7 @@
         <hr>
         <div id="profile-bio" class="grid pad-block-2 gap-2">
             <img class="span-6" :src="this.$page.frontmatter.image" alt="Portrait">
-            <div id="bio" class="span-6" style="max-width: 130ch"><Content /></div>
+            <div id="bio" class="span-6 m-first" style="max-width: 130ch"><Content /></div>
         </div>
         <div id="profile-info" class="grid gap-horizontal-2">
             <div class="profile-info-group pad-block-2 span-6 grid gap-2 static">
@@ -72,6 +72,8 @@ export default {}
     /* font-size: 1.8em; */
     /* font-size: clamp(1.25rem, calc(0.42rem + 1.67vw), 1.88rem); */
     font-size: clamp(1.13rem, calc(0.03rem + 2.20vw), 2.50rem);
+}
+#bio p:not(:last-of-type) {
     margin-bottom: var(--spacing-unit);
 }
 
