@@ -82,9 +82,11 @@ export default {}
     grid-auto-rows: minmax(min-content, max-content);
 }
 
-.profile-info-group:hover .pill {
-    color: var(--color-neutral-900);
-    background: var(--color-neutral-100);
-    transform: scale(1.075);
+@media (hover: hover), (-ms-high-contrast:none) {
+    .profile-info-group:hover .pill {
+        color: var(--color-neutral-900);
+        background: var(--color-neutral-100);
+        transform: scale(1.075);
+    }
 }
 </style>
