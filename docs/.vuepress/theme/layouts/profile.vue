@@ -68,13 +68,16 @@ export default {}
 #bio a {
     white-space: nowrap;
 }
-#bio p{
-    /* font-size: 1.8em; */
-    /* font-size: clamp(1.25rem, calc(0.42rem + 1.67vw), 1.88rem); */
-    font-size: clamp(1.13rem, calc(0.03rem + 2.20vw), 2.50rem);
-}
+
 #bio p:not(:last-of-type) {
-    margin-bottom: var(--spacing-unit);
+    margin-bottom: calc(var(--spacing-unit) * 2);
+}
+
+#bio p {
+    line-height: 1.25;
+    /* font-weight: 500; */
+    /* font-size: clamp(1.50rem, calc(0.50rem + 2.00vw), 3.50rem); */
+    font-size: clamp(1.25rem, calc(0.13rem + 2.25vw), 3.50rem);
 }
 
 .profile-info-group {
@@ -86,7 +89,7 @@ export default {}
     .profile-info-group:hover .pill {
         color: var(--color-neutral-900);
         background: var(--color-neutral-100);
-        transform: scale(1.075);
+        /* transform: scale(1.075); */
     }
 }
 </style>

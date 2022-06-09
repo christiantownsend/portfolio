@@ -41,7 +41,7 @@ export default {
                 return;
             }
 
-            if (e.target.nodeName.toLowerCase() == 'a' || e.target.closest('button') != null || e.target.closest('.project-row') != null) {
+            if (e.target.nodeName.toLowerCase() == 'a' || e.target.closest('a') != null || e.target.closest('button') != null || e.target.closest('.project-row') != null) {
                 this.delay = 12
                 this.scale = .6
 

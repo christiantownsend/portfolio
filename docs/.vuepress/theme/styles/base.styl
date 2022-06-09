@@ -33,6 +33,34 @@
     src: url('/static/fonts/PPNeueMontreal-BoldItalic.woff2');
 }
 
+@font-face {
+    font-family: 'TWK Lausanne';
+    font-weight: 500;
+    font-style: normal;
+    src: url('/static/fonts/TWKLausanne-500.woff2');
+}
+
+@font-face {
+    font-family: 'TWK Lausanne';
+    font-weight: 500;
+    font-style: italic;
+    src: url('/static/fonts/TWKLausanne-500Italic.woff2');
+}
+
+@font-face {
+    font-family: 'TWK Lausanne';
+    font-weight: bold;
+    font-style: normal;
+    src: url('/static/fonts/TWKLausanne-800.woff2');
+}
+
+@font-face {
+    font-family: 'TWK Lausanne';
+    font-weight: bold;
+    font-style: italic;
+    src: url('/static/fonts/TWKLausanne-800Italic.woff2');
+}
+
 ::selection {
     background: var(--color-primary);
     color: var(--color-neutral-900);
@@ -57,6 +85,7 @@ html {
 
 html * {
     font-family: var(--font-stack);
+    text-rendering: optimizeLegibility;
 }
 
 body{
@@ -103,7 +132,7 @@ hr {
         text-decoration: underline;
         text-decoration-skip-ink: all;
         text-decoration-thickness: .08em;
-        text-underline-offset: .18em;
+        text-underline-offset: .15em;
         text-decoration-color: var(--color-primary);
     }
 }

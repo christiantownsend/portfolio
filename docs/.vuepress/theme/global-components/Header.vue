@@ -1,9 +1,9 @@
 <template>
     <header class="header-outer container">
         <div class=" header-inner">
-            <div id="logo">
+            <router-link id="logo" to="/" class="no-arrow">
                 <Logo />
-            </div>
+            </router-link>
             <div class="title">Christian Townsend</div>
             <nav>
                 <router-link class="nav-link" v-for="item in $themeConfig.nav" :key="item.text" :to="item.url">{{ item.text }}</router-link>
