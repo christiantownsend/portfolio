@@ -15,6 +15,5 @@
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:serve": "vuepress serve docs"
-  },
-  "dependencies": {}
+  }
 }
