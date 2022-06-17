@@ -105,19 +105,21 @@ exports.handler = async (event, context) => {
     
     // Send greeting to Slack
     return fetch(API_ENDPOINT, {
-    headers: {
-        "content-type": "application/json",
-        "accept": "application/vnd.uploadcare-v0.6+json",
-        "authorization": `Uploadcare.Simple ${process.env.PUBLIC_KEY}:${process.env.SECRET_KEY}`,
-    },
-    method: "POST",
-    body: JSON.stringify({
-            paths: [
-                `${uuid}/video/-/quality/lighter/-/format/mp4/-/size/1920x1080/-/format/mp4/`,
-                `${uuid}/video/-/quality/lighter/-/format/mp4/-/size/1920x1080/-/format/webm/`
-            ],
-            store: '1'
-        }),
+        method: "POST",
+        withCredentials: true,
+        credentials: 'include',
+        headers: {
+            "Content-type": "application/json",
+            "Accept": "application/vnd.uploadcare-v0.6+json",
+            "Authorization": `Uploadcare.Simple ${process.env.PUBLIC_KEY}:${process.env.SECRET_KEY}`,
+        },
+        body: JSON.stringify({
+                paths: [
+                    `${uuid}/video/-/quality/lighter/-/format/mp4/-/size/1920x1080/-/format/mp4/`,
+                    `${uuid}/video/-/quality/lighter/-/format/mp4/-/size/1920x1080/-/format/webm/`
+                ],
+                store: '1'
+            }),
     })
     .then(() => ({
         statusCode: 200,
