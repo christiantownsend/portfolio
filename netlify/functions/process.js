@@ -82,7 +82,7 @@ rawUrl: 'https://staging.ctownsend.me/.netlify/functions/process',
 
 // import fetch from 'node-fetch'
 
-const fetch = import("node-fetch");
+const fetch = require("node-fetch")
 const dotenv = require("dotenv")
 dotenv.config()
 
