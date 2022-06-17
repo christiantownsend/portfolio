@@ -9,6 +9,7 @@ description: Pudge Mono is a high-contrast, reversed-stress, monospace display
   are able to stand out.
 visible: true
 vimeo: "573454194"
+videoUrl: "https://ucarecdn.com/60dce5ba-ffb9-40d1-a82f-a9a72a87f4d2/"
 image: /static/pudge-placeholder.jpg
 color: "#000000"
 tags:

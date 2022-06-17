@@ -3,7 +3,7 @@
 }
 
 .project-row {
-  display: flex;
+  // display: flex;
   // flex-wrap: wrap;
 
   & > * {
@@ -20,9 +20,10 @@
 
   .project-title {
     // text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 500;
     // font-size: 4em;
     // font-size: clamp(2.25em, calc(0.22rem + 5.46vw), 5.00em);
+    letter-spacing: -.06em;
     font-size: clamp(2.25rem, calc(-0.31rem + 6.83vw), 7.38rem);
     line-height: .95;
     z-index: 5;
@@ -30,6 +31,13 @@
     // word-break: break-all;
     // max-width: 100%;
     // overflow: hidden;
+  }
+
+  .project-title a::after {
+    display: inline-block;
+    font-weight: 300;
+    vertical-align: super;
+    font-size: .6em;
   }
 
   .project-desc {

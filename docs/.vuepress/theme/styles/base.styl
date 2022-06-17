@@ -35,6 +35,13 @@
 
 @font-face {
     font-family: 'TWK Lausanne';
+    font-weight: 300;
+    font-style: normal;
+    src: url('/static/fonts/TWKLausanne-300.woff2');
+}
+
+@font-face {
+    font-family: 'TWK Lausanne';
     font-weight: 500;
     font-style: normal;
     src: url('/static/fonts/TWKLausanne-500.woff2');
@@ -118,7 +125,11 @@ hr {
 
 
 .container {
-    padding-inline: 8%;
+    padding-inline: @css{min(3rem, 8%)};
+}
+
+video {
+    width: 100%;
 }
 
 .content__default {

@@ -8,6 +8,7 @@ description: Playground is a collection of various 3D experiments and
   up being some of my favorite pieces to look at.
 visible: true
 vimeo: "674049018"
+videoUrl: "https://ucarecdn.com/5818c355-c519-4489-a104-f1a258b0ab6d/"
 image: /static/playground-placeholder.jpg
 color: "#d43d47"
 tags:
@@ -49,7 +50,11 @@ tags:
 <vimeo videoID="680728984" aspect-ratio="16 / 9"/>
 
 ::: span 6
-<vimeo videoID="577814474" aspect-ratio="1 / 1"/>
+<!-- <vimeo videoID="577814474" aspect-ratio="1 / 1"/> -->
+<video autoplay muted loop>
+  <source src="https://ucarecdn.com/1fd253ae-0f2f-495d-b283-485194baaaa1/" type="video/mp4"/>
+</video>
+
 :::
 
 ::: span 6

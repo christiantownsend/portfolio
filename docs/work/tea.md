@@ -9,6 +9,7 @@ description: This tea package is a project I made while studying abroad in
   side of a flat plan, and the box has a novel and delightful way of opening
 visible: true
 vimeo: "573454203"
+videoUrl: "https://ucarecdn.com/cffa15a6-e6eb-4231-816d-91f36db8ee08/"
 image: /static/tea-placeholder.jpg
 color: "#f0bb2b"
 tags:
