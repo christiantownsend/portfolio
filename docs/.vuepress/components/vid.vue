@@ -1,5 +1,5 @@
 <template>
-    <video autoplay muted loop :class="`video-load ${side} ${loaded ? 'loaded' : ''}`">
+    <video autoplay muted loop playsinline :class="`video-load ${side} ${loaded ? 'loaded' : ''}`">
         <source :src="src"/>
     </video>
 </template>
