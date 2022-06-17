@@ -113,6 +113,8 @@ exports.handler = async (event, context) => {
         withCredentials: true,
         credentials: 'include',
         headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Credentials": true,
             "Content-type": "application/json",
             "Accept": "application/vnd.uploadcare-v0.6+json",
             "Authorization": `Uploadcare.Simple ${process.env.PUBLIC_KEY}:${process.env.SECRET_KEY}`,
