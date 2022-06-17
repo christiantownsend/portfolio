@@ -107,11 +107,12 @@ exports.handler = async (event, context) => {
     return fetch(API_ENDPOINT, {
         method: "POST",
         withCredentials: true,
-        credentials: 'include',
+        // credentials: 'include',
         headers: {
             "Content-type": "application/json",
             "Accept": "application/vnd.uploadcare-v0.6+json",
-            "Authorization": `Uploadcare.Simple ${process.env.PUBLIC_KEY}:${process.env.SECRET_KEY}`,
+            // "Authorization": `Uploadcare.Simple ${process.env.PUBLIC_KEY}:${process.env.SECRET_KEY}`,
+            "Authorization": "Uploadcare.Simple " + Buffer.from(process.env.PUBLIC_KEY + ":" + process.env.SECRET_KEY).toString('base64')
         },
         body: JSON.stringify({
                 paths: [
