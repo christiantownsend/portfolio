@@ -50,10 +50,7 @@ tags:
 <vimeo videoID="680728984" aspect-ratio="16 / 9"/>
 
 ::: span 6
-<!-- <vimeo videoID="577814474" aspect-ratio="1 / 1"/> -->
-<video autoplay muted loop>
-  <source src="https://ucarecdn.com/1fd253ae-0f2f-495d-b283-485194baaaa1/" type="video/mp4"/>
-</video>
+<vimeo videoID="577814474" aspect-ratio="1 / 1"/>
 
 :::
 
