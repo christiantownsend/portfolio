@@ -1,5 +1,5 @@
 <template>
-    <video autoplay muted loop playsinline :class="`video-load ${side} ${loaded ? 'loaded' : ''}`">
+    <video autoplay muted loop playsinline :class="`video-load ${side} ${loaded ? 'loaded' : ''}`" @loadeddata="loaded = true">
         <source :src="src"/>
     </video>
 </template>
@@ -15,11 +15,14 @@ export default {
         src: String,
         side: String
     },
-    mounted() {
-        this.$el.addEventListener('loadeddata', () => {
-            this.loaded = true
-        })
-    }
+    // mounted() {
+    //     const handleLoad = () => {
+    //         this.loaded = true
+    //         this.$el.removeEventListener('loadeddata', handleLoad)
+    //     }
+
+    //     this.$el.addEventListener('loadeddata', handleLoad)
+    // }
 }
 </script>
 
