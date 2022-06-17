@@ -112,11 +112,11 @@ exports.handler = async (event, context) => {
         mode: "cors",
         withCredentials: true,
         credentials: 'include',
-        headers: new Headers({
+        headers: {
             "Content-type": "application/json",
             "Accept": "application/vnd.uploadcare-v0.6+json",
             "Authorization": `Uploadcare.Simple ${process.env.PUBLIC_KEY}:${process.env.SECRET_KEY}`,
-        }),
+        },
         body: JSON.stringify({
                 paths: [
                     `${uuid}/video/-/quality/lighter/-/format/mp4/-/size/1920x1080/-/format/mp4/`,
