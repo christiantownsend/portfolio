@@ -91,6 +91,19 @@ const API_ENDPOINT = "https://api.uploadcare.com/convert/video/";
 exports.handler = async (event, context) => {
 
     const params = event.body ? JSON.parse(event.body) : undefined
+
+    const headers = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type, Accept, Authorization",
+        "Access-Control-Allow-Methods": "GET, POST, OPTIONS",
+    };
+    if (event.httpMethod === "OPTIONS") {
+        return {
+          statusCode: 200,
+          headers,
+          body: JSON.stringify({ message: "Successful preflight call." }),
+        }
+    }
     
     // Only allow POST
     if (event.httpMethod !== "POST") {
@@ -109,12 +122,10 @@ exports.handler = async (event, context) => {
     // Send greeting to Slack
     return fetch(API_ENDPOINT, {
         method: "POST",
-        mode: "cors",
         withCredentials: true,
         credentials: 'include',
         headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Credentials": true,
+            ...headers,
             "Content-type": "application/json",
             "Accept": "application/vnd.uploadcare-v0.6+json",
             "Authorization": `Uploadcare.Simple ${process.env.PUBLIC_KEY}:${process.env.SECRET_KEY}`,
@@ -135,4 +146,4 @@ exports.handler = async (event, context) => {
         statusCode: 422,
         body: `Oops! Something went wrong. ${error}`,
     }));
-};
+}
