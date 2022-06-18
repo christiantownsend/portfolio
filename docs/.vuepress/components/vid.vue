@@ -15,14 +15,6 @@ export default {
         src: String,
         side: String
     },
-    // mounted() {
-    //     const handleLoad = () => {
-    //         this.loaded = true
-    //         this.$el.removeEventListener('loadeddata', handleLoad)
-    //     }
-
-    //     this.$el.addEventListener('loadeddata', handleLoad)
-    // }
 }
 </script>
 

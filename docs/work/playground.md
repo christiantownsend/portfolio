@@ -8,7 +8,8 @@ description: Playground is a collection of various 3D experiments and
   up being some of my favorite pieces to look at.
 visible: true
 vimeo: "674049018"
-videoUrl: "https://ucarecdn.com/5818c355-c519-4489-a104-f1a258b0ab6d/"
+# videoUrl: "https://ucarecdn.com/5818c355-c519-4489-a104-f1a258b0ab6d/"
+videoUrl: "https://ik.imagekit.io/ctownsend/Blockflow_02_Render_mGuot2LRQ.mp4"
 image: /static/playground-placeholder.jpg
 color: "#d43d47"
 tags:

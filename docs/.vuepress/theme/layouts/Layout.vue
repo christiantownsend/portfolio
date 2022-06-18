@@ -1,6 +1,6 @@
 <template>
     <div class="container content">
-      <hr>
+      <!-- <hr> -->
       <router-link class="project no-arrow" v-for="(project, index) in projects" :key="project.key" :to="project.path" @mouseenter.native="activeProject = index">
         <div class="project-row pad-block-2 gap-horizontal-2 gap-vertical-2 grid" :class="{active: index == activeProject}">
           <div class="project-info span-5 gap-1">
@@ -23,9 +23,9 @@
             </div>
           </div>
         </div>
-        <hr>
       </router-link>
 
+      <!-- <hr> -->
     </div>
 </template>
 

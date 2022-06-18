@@ -6,7 +6,7 @@
     <!-- <video autoplay muted loop style="width: 100%">
         <source :src="$page.frontmatter.videoUrl" type="video/mp4"/>
     </video> -->
-    <vid :src="$page.frontmatter.videoUrl" side="bottom" style="height: 100vh; object-fit: cover"/>
+    <vid :src="$page.frontmatter.videoUrl" side="top" style="height:100vh; object-fit: cover"/>
     
     <div class="container">
         <div class="grid pad-block-4">
@@ -28,7 +28,7 @@
 
         <Content class="grid gap-2 pad-block-2"/>
         
-        <hr>
+        <!-- <hr> -->
     </div>
   </div>
 </template>

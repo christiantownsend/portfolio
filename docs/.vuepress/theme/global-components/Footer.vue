@@ -1,7 +1,7 @@
 <template>
-    <div class="container lighten pad-block-4 gap-1" style="display: flex; justify-content: space-between; align-items: center; font-size: .85em; flex-wrap: wrap; margin-top: auto;">
+    <div class="footer container lighten gap-1">
         <div>Updated {{ this.$themeConfig.lastUpdated }}</div>
-        <div>Copyright © {{ new Date().getFullYear() }} Christian Townsend, All Rights Reserved</div>
+        <div>Copyright © {{ new Date().getFullYear() }} Christian Townsend</div>
         <DarkModeToggle />
     </div>
 </template>
@@ -13,3 +13,16 @@ export default {
     components: { DarkModeToggle },
 }
 </script>
+
+<style>
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .85em;
+    flex-wrap: wrap;
+    padding-block-start: calc(var(--spacing-unit) * 4);
+    padding-block-end: calc(var(--spacing-unit) * 2);
+    margin-top: auto;
+}
+</style>

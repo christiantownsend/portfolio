@@ -2,7 +2,7 @@
   <div>
     <!-- <Header /> -->
     <div class="container">
-        <hr>
+        <!-- <hr> -->
         <div id="profile-bio" class="grid pad-block-2 gap-2">
             <img class="span-6" :src="this.$page.frontmatter.image" alt="Portrait">
             <div id="bio" class="span-6 m-first" style="max-width: 130ch"><Content /></div>
@@ -49,7 +49,7 @@
                 </ul>
             </div>
         </div>
-        <hr>
+        <!-- <hr> -->
     </div>
   </div>
 </template>
