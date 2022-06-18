@@ -10,7 +10,7 @@ description: Input is a quarterly publication focusing on the surprisingly deep
   applicable emerging technologies.
 visible: true
 vimeo: "573454129"
-videoUrl: "https://ucarecdn.com/963a51ca-f590-4aca-ad78-03b0dde96239/"
+videoUrl: "https://media.ctownsend.me/hover-input-1080.mp4"
 image: /static/input-placeholder.jpg
 color: "#0d3627"
 tags:

@@ -10,7 +10,7 @@ description: Descent is a two-player board game exploring concepts surrounding
   as sabotage the other player’s expedition.
 visible: true
 vimeo: "573454115"
-videoUrl: "https://ucarecdn.com/d77f5dbc-979e-472b-b3d5-48569b42f755/"
+videoUrl: "https://media.ctownsend.me/hover-descent-1080.mp4"
 image: /static/descent-placeholder.jpg
 color: "#090f30"
 tags:

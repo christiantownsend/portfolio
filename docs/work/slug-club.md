@@ -16,7 +16,7 @@ description: Slug Club is an elevated kombucha (literally!), created with
   to a bright, fresh new cold one to crack at your next gathering.
 visible: true
 vimeo: "666118319"
-videoUrl: "https://ucarecdn.com/cee01ac1-5b76-4d85-afea-db2da2e9a9a7/"
+videoUrl: "https://media.ctownsend.me/hover-slug-club-1080.mp4"
 image: /static/slug-club-placeholder.jpg
 color: "#317F82"
 tags:
