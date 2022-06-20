@@ -24,7 +24,7 @@ tags:
 :::
 
 ::: span 6
-<vimeo videoID="577812325" aspectRatio="1 / 1"/>
+<vid src="https://media.ctownsend.me/tea-package/package-unfold.mp4"/>
 :::
 
 ![Package Open](/static/Tea-Package-Open.png)

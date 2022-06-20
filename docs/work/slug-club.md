@@ -29,9 +29,8 @@ collaborators:
   - name: The Collected Works
     link: https://thecollectedworks.com/
 ---
-<!-- <vimeo videoID="665367508" aspect-ratio="16 / 9"/> -->
 
-<vimeo videoID="665811599" aspect-ratio="16 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-can-grid.mp4"/>
 
 ::: span 6
 ![Wordmark Curves](/static/TheCollectedWorks_SlugClub_v1_2.jpg)
@@ -43,19 +42,19 @@ collaborators:
 
 ![Label Render](/static/TheCollectedWorks_SlugClub_v1_3-1.jpg)
 
-<vimeo videoID="662009441" aspect-ratio="16 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-width-slider.mp4"/>
 
 ::: span 6
-<vimeo videoID="662009426" aspect-ratio="8 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-code-scroll.mp4"/>
 :::
 
 ::: span 6
-<vimeo videoID="662009451" aspect-ratio="8 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-wordmarknoise.mp4"/>
 :::
 
-<vimeo videoID="665743980" aspect-ratio="16 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-logo-generator.mp4"/>
 
-<vimeo videoID="662090934" aspect-ratio="16 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-colors.mp4"/>
 
 ::: span 6
 ![Can Render 1](/static/TheCollectedWorks_SlugClub_v1_6.jpg)
@@ -75,17 +74,17 @@ collaborators:
 
 ![Can Render Landscape 1](/static/TheCollectedWorks_SlugClub_v1_1-1.jpg)
 
-<vimeo videoID="664922114" aspect-ratio="16 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-typography.mp4"/>
 
 ::: span 6
-<vimeo videoID="665381449" aspect-ratio="8 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-t-shirt.mp4"/>
 :::
 
 ::: span 6
-<vimeo videoID="664933436" aspect-ratio="8 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-fds-spin.mp4"/>
 :::
 
-<vimeo videoID="664922132" aspect-ratio="16 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-elaboradoenpatagonia.mp4"/>
 
 ::: span 6
 ![Tote](/static/TheCollectedWorks_SlugClub_v1_13.jpg)
@@ -95,7 +94,7 @@ collaborators:
 ![Postcards](/static/TheCollectedWorks_SlugClub_v2_16.jpg)
 :::
 
-<vimeo videoID="668807625" aspect-ratio="16 / 9"/>
+<vid src="https://media.ctownsend.me/slug-club/thecollectedworks-slug-club-laptop.mp4"/>
 
 ![Brand Guidelines](/static/TheCollectedWorks_SlugClub_v2_Brand-Guidelines.jpg)
 

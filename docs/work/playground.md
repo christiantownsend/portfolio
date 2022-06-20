@@ -8,52 +8,60 @@ description: Playground is a collection of various 3D experiments and
   up being some of my favorite pieces to look at.
 visible: true
 vimeo: "674049018"
-videoUrl: "https://media.ctownsend.me/hover-playground-1080.mp4"
+videoUrl: "https://media.ctownsend.me/playground/grainy-spiral-01.mp4"
 image: /static/playground-placeholder.jpg
 color: "#d43d47"
 tags:
   - 3D
   - Motion
 ---
-<vimeo videoID="680721338" aspect-ratio="16 / 9"/>
+
+::: span 6
+<vid src="https://media.ctownsend.me/playground/grainy-ghost-circles-01.mp4" tag="2022" tag-pos="top-right"/>
+:::
+
+::: span 6
+<vid src="https://media.ctownsend.me/playground/grainy-maze-01.mp4" tag="2022" tag-pos="top-right"/>
+:::
+
+::: span 6
+<vid src="https://media.ctownsend.me/playground/grainy-mitosis-01.mp4" tag="2022" tag-pos="top-right"/>
+:::
+
+::: span 6
+<vid src="https://media.ctownsend.me/playground/grainy-mod-02.mp4" tag="2022" tag-pos="top-right"/>
+:::
 
 ::: span 4
-![Playground](/static/playground-soft-touch-01.jpg)
+<tagged-image src="/static/playground-soft-touch-01.jpg" tag="2020" tag-pos="top-right"/>
 :::
 
 ::: span 4
-![Playground](/static/playground-soft-touch-02.jpg)
+<tagged-image src="/static/playground-soft-touch-02.jpg" tag="2020" tag-pos="top-right"/>
 :::
 
 ::: span 4
-![Playground](/static/playground-soft-touch-03.jpg)
+<tagged-image src="/static/playground-soft-touch-03.jpg" tag="2020" tag-pos="top-right"/>
+:::
+
+<vid src="https://media.ctownsend.me/playground/blockflow.mp4" tag="2021" tag-pos="top-right"/>
+
+::: span 6
+<vid src="https://media.ctownsend.me/playground/dandelion-grow.mp4" tag="2021" tag-pos="top-right"/>
 :::
 
 ::: span 6
-![Playground](/static/playground-cell.jpg)
+<tagged-image src="/static/playground-caustics.jpg" tag="2022" tag-pos="top-right"/>
+:::
+
+<tagged-image src="/static/playground-natural.jpg" tag="2021" tag-pos="top-right"/>
+
+::: span 6
+<vid src="https://media.ctownsend.me/playground/circle-square-01.mp4" tag="2021" tag-pos="top-right"/>
 :::
 
 ::: span 6
-![Playground](/static/playground-caustics.jpg)
+<tagged-image src="/static/playground-cell.jpg" tag="2020" tag-pos="top-right"/>
 :::
 
-![Playground](/static/playground-natural.jpg)
-
-::: span 6
-<vimeo videoID="577815857" aspect-ratio="1 / 1"/>
-:::
-
-::: span 6
-<vimeo videoID="577815699" aspect-ratio="1 / 1"/>
-:::
-
-<vimeo videoID="680728984" aspect-ratio="16 / 9"/>
-
-::: span 6
-<vimeo videoID="577814474" aspect-ratio="1 / 1"/>
-
-:::
-
-::: span 6
-![Playground](/static/playground-tracker-grid.jpg)
-:::
+<vid src="https://media.ctownsend.me/playground/light-pixels.mp4" tag="2021" tag-pos="top-right"/>

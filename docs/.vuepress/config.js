@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Christian Townsend | Designer',
+    title: 'Christian Townsend',
     description: 'Christian Townsend is an NYC-based designer currently working with The Collected Works. In his free time you might find him doodling in his sketchbook, making music, or generally poking away at his ever-growing list of interests.',
     themeConfig: {
         nav: [
@@ -11,11 +11,11 @@ module.exports = {
     head: [
         ['meta', {name: 'viewport', content: 'width=device-width, initial-scale=1.0'}],
         ['link', { rel: 'icon', href: '/static/favicon.svg' }],
-        ['link', { rel: 'preconnect', href: 'https://player.vimeo.com' }],
-        ['link', { rel: 'preconnect', href: 'https://i.vimeocdn.com' }],
-        ['link', { rel: 'preconnect', href: 'https://f.vimeocdn.com' }],
-        ['link', { rel: 'preload', href: 'https://player.vimeo.com/api/player.js', as: 'script' }],
-        ['script', { src: 'https://player.vimeo.com/api/player.js' }],
+        // ['link', { rel: 'preconnect', href: 'https://player.vimeo.com' }],
+        // ['link', { rel: 'preconnect', href: 'https://i.vimeocdn.com' }],
+        // ['link', { rel: 'preconnect', href: 'https://f.vimeocdn.com' }],
+        // ['link', { rel: 'preload', href: 'https://player.vimeo.com/api/player.js', as: 'script' }],
+        // ['script', { src: 'https://player.vimeo.com/api/player.js' }],
         ['script', {
             defer: true,
             async: true,

@@ -6,7 +6,7 @@
           <div class="project-info span-5 gap-1">
             <p class="project-title"><a>{{project.frontmatter.title}}</a></p>
             <div class="project-desc gap-2">
-              <p class="project-year pill">{{project.frontmatter.year}}</p>
+              <p class="project-year small pill">{{project.frontmatter.year}}</p>
               <p class="project-tags">{{project.frontmatter.tags.join(", ")}}</p>
             </div>
           </div>
@@ -19,7 +19,7 @@
               <!-- <video autoplay muted loop preload>
                 <source :src="project.frontmatter.videoUrl" type="video/mp4"/>
               </video> -->
-              <vid :src="project.frontmatter.videoUrl"/>
+              <vid :src="project.frontmatter.videoUrl" side="right" style="height: 100%;" cover/>
             </div>
           </div>
         </div>

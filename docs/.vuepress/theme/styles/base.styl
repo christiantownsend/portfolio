@@ -218,3 +218,51 @@ ul {
 .small {
     font-size: .85em
 }
+
+[data-tag] {
+    position: relative;
+}
+
+[data-tag]::before {
+    // --rotation: attr(data-tag-rotation);
+
+    content: attr(data-tag);
+    z-index: 5;
+    position: absolute;
+    display: block;
+    width: min-content;
+    aspect-ratio: 1 / 1;
+    font-size: var(--font-size);
+    line-height: .85;
+    padding: .6em;
+
+    display: flex;
+    align-items: center;
+    
+    text-transform: uppercase;
+    color: var(--color-neutral-900);
+    background: var(--color-neutral-100);
+    border-radius: 50%;
+    // border: 1px solid currentColor;
+}
+
+[data-tag][data-tag-pos=top-left]::before {
+    top: 0;
+    left: 0;
+    transform: translate(-35%, -35%) rotate(var(--rotation));
+}
+[data-tag][data-tag-pos=top-right]::before {
+    top: 0;
+    right: 0;
+    transform: translate(35%, -35%) rotate(var(--rotation));
+}
+[data-tag][data-tag-pos=bottom-left]::before {
+    bottom: 0;
+    left: 0;
+    transform: translate(-35%, 35%) rotate(var(--rotation));
+}
+[data-tag][data-tag-pos=bottom-right]::before {
+    bottom: 0;
+    right: 0;
+    transform: translate(35%, 35%) rotate(var(--rotation));
+}

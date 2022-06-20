@@ -6,7 +6,7 @@
     <!-- <video autoplay muted loop style="width: 100%">
         <source :src="$page.frontmatter.videoUrl" type="video/mp4"/>
     </video> -->
-    <vid :src="$page.frontmatter.videoUrl" side="top" style="height:100vh; object-fit: cover"/>
+    <vid :src="$page.frontmatter.videoUrl" side="top" style="height:100vh;" cover/>
     
     <div class="container">
         <div class="grid pad-block-4">

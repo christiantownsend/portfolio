@@ -18,6 +18,8 @@ features:
     link: https://www.printmag.com/packaging-design/fermented-beverages-have-never-looked-as-charming-as-slug-club-kombucha/
   - text: Brand New
     link: https://www.underconsideration.com/brandnew/archives/new_logo_identity_and_packaging_for_slug_club_by_the_collected_works.php#disqus_thread
+  - text: Siteinspire
+    link: https://www.siteinspire.com/websites/10926-uno
 capabilities:
   - Branding & Identity
   - Experiential Design

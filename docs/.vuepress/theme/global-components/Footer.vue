@@ -1,7 +1,7 @@
 <template>
     <div class="footer container lighten gap-1">
-        <div>Updated {{ this.$themeConfig.lastUpdated }}</div>
-        <div>Copyright © {{ new Date().getFullYear() }} Christian Townsend</div>
+        <div>© {{ new Date().getFullYear() }} Christian Townsend — Brooklyn, NY</div>
+        <!-- <div>Updated {{ this.$themeConfig.lastUpdated }}</div> -->
         <DarkModeToggle />
     </div>
 </template>
@@ -19,7 +19,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: .85em;
+    /* font-size: .85em; */
     flex-wrap: wrap;
     padding-block-start: calc(var(--spacing-unit) * 4);
     padding-block-end: calc(var(--spacing-unit) * 2);
